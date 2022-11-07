@@ -1,0 +1,94 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>ConstrMemory</nom>
+  <date_creation>3/11/2022 16:02</date_creation>
+  <Elements>
+    <Action>
+      <Position>527;92</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>unePartie, JoueurCrea, nbJoueursVoulus</PreAssertion>
+      <PostAssertion>unePartie</PostAssertion>
+      <Titre>unePartie ← Memory(Joueur, int)</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>533;195</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>JoueurCrea, nbJoueursVoulus</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>Initialisation des variables</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>107;318</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>nbJoueursVoulus</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>unePartie.setNbJoueurs
+(nbJoueursVoulus)</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>553;315</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>JoueurCrea</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>unePartie.ajouterJoueur
+(JoueurCrea)</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>996;316</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Initialisation identifiant</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>519;442</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>nbParties</PostAssertion>
+                  <Titre>On récupère le nombre de parties de la base</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Action>
+                  <Position>906;445</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>unePartie.setIdentifiant(
+nbParties + 1)</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Action>
+                  <Position>1164;449</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>On place cette partie dans la base</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </Action>
+          </Enfants>
+        </Action>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>
