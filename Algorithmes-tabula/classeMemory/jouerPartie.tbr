@@ -2,7 +2,7 @@
 <!DOCTYPE Tabula_Rasa>
 <Algorithme>
   <nom>jouerPartie</nom>
-  <date_creation>3/11/2022 15:57</date_creation>
+  <date_creation>7/11/2022 15:15</date_creation>
   <Elements>
     <Action>
       <Position>665;120</Position>
@@ -43,7 +43,7 @@
                       <estUnique>0</estUnique>
                       <operationsLogiques>
                         <operation>
-                          <Titre>unePartie.mesCartes.
+                          <Titre>unePartie.mesCartes.&#xd;
 size() = 0</Titre>
                           <Enfants/>
                         </operation>
@@ -52,7 +52,7 @@ size() = 0</Titre>
                   </Enfants>
                 </Action>
                 <Action>
-                  <Position>631;417</Position>
+                  <Position>741;423</Position>
                   <StyleLien>2</StyleLien>
                   <PreAssertion>indice</PreAssertion>
                   <PostAssertion>?</PostAssertion>
@@ -61,11 +61,11 @@ size() = 0</Titre>
                   <DetailsVideVisible>0</DetailsVideVisible>
                   <Enfants>
                     <Action>
-                      <Position>689;505</Position>
+                      <Position>799;511</Position>
                       <StyleLien>1</StyleLien>
                       <PreAssertion>?</PreAssertion>
                       <PostAssertion>?</PostAssertion>
-                      <Titre>mesJoueurs[indice].
+                      <Titre>mesJoueurs[indice].&#xd;
 methodeDeJeu()</Titre>
                       <DetailsVisible>1</DetailsVisible>
                       <DetailsVideVisible>0</DetailsVideVisible>
@@ -74,30 +74,9 @@ methodeDeJeu()</Titre>
                   </Enfants>
                 </Action>
                 <Action>
-                  <Position>1009;416</Position>
-                  <StyleLien>2</StyleLien>
-                  <PreAssertion>?</PreAssertion>
-                  <PostAssertion>?</PostAssertion>
-                  <Titre>MAJ du visuel des joueurs</Titre>
-                  <DetailsVisible>1</DetailsVisible>
-                  <DetailsVideVisible>0</DetailsVideVisible>
-                  <Enfants>
-                    <Action>
-                      <Position>1014;516</Position>
-                      <StyleLien>1</StyleLien>
-                      <PreAssertion>?</PreAssertion>
-                      <PostAssertion>?</PostAssertion>
-                      <Titre>unePartie.afficherPartie()</Titre>
-                      <DetailsVisible>0</DetailsVisible>
-                      <DetailsVideVisible>1</DetailsVideVisible>
-                      <Enfants/>
-                    </Action>
-                  </Enfants>
-                </Action>
-                <Action>
                   <Position>1272;417</Position>
                   <StyleLien>2</StyleLien>
-                  <PreAssertion>indice,
+                  <PreAssertion>indice,&#xd;
 nbJoueurs</PreAssertion>
                   <PostAssertion>indice</PostAssertion>
                   <Titre>Modification indice</Titre>
@@ -109,7 +88,7 @@ nbJoueurs</PreAssertion>
                       <StyleLien>1</StyleLien>
                       <PreAssertion>?</PreAssertion>
                       <PostAssertion>?</PostAssertion>
-                      <Titre>indice ← 
+                      <Titre>indice ← &#xd;
 (indice + 1)%nbJoueurs</Titre>
                       <DetailsVisible>1</DetailsVisible>
                       <DetailsVideVisible>0</DetailsVideVisible>
