@@ -1,0 +1,410 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>initPartie</nom>
+  <date_creation>8/11/2022 10:25</date_creation>
+  <Elements>
+    <Action>
+      <Position>227;13</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>unePartie</PreAssertion>
+      <PostAssertion>bool</PostAssertion>
+      <Titre>error ← unePartie.initPartie()</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>172;106</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>Initialisation unePartie.mesCartes</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+        <Action>
+          <Position>593;107</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>mesJoueurs</PostAssertion>
+          <Titre>Initialisation unePartie.mesJoueurs</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+        <Condition>
+          <Position>394;111</Position>
+          <StyleLien>1</StyleLien>
+          <estUnique>0</estUnique>
+          <operationsLogiques>
+            <operation>
+              <Titre>SI error = true</Titre>
+              <Enfants>
+                <Sortie>
+                  <Position>454;197</Position>
+                </Sortie>
+              </Enfants>
+            </operation>
+            <operation>
+              <Titre>Sinon</Titre>
+              <Enfants/>
+            </operation>
+          </operationsLogiques>
+        </Condition>
+        <Condition>
+          <Position>948;106</Position>
+          <StyleLien>1</StyleLien>
+          <estUnique>0</estUnique>
+          <operationsLogiques>
+            <operation>
+              <Titre>SI error = true</Titre>
+              <Enfants>
+                <Sortie>
+                  <Position>993;167</Position>
+                </Sortie>
+              </Enfants>
+            </operation>
+            <operation>
+              <Titre>Sinon</Titre>
+              <Enfants/>
+            </operation>
+          </operationsLogiques>
+        </Condition>
+      </Enfants>
+    </Action>
+    <Action>
+      <Position>641;202</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>mesCartes</PostAssertion>
+      <Titre>Initialisation unePartie.mesCartes</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>0</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>67;311</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>nbCartes
+</PreAssertion>
+          <PostAssertion>tabVal</PostAssertion>
+          <Titre>Tableau des
+numéros de cartes
+tabVal</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>49;400</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>tabVal[nbCartes]</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>182;400</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>tabVal</PreAssertion>
+              <PostAssertion>tabVal</PostAssertion>
+              <Titre>créer tableau
+avec valeurs</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants>
+                <Iteration>
+                  <Position>286.5;467.5</Position>
+                  <StyleLien>1</StyleLien>
+                  <Titre>pour i allant de
+ 1 à nbCartes</Titre>
+                  <IterationFixe>1</IterationFixe>
+                  <Enfants>
+                    <Action>
+                      <Position>252;544</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>tabVal.append(i)</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </Iteration>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>439;399</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>tabVal.shuffle()</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>584;300</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>nbCartes</PreAssertion>
+          <PostAssertion>tabImages</PostAssertion>
+          <Titre>Tableau des
+numéros des images
+tabImages</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>593;388</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>tabCartes[nbCartes]</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>629;448</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>tabCartes</PreAssertion>
+              <PostAssertion>tabCartes</PostAssertion>
+              <Titre>créer tableau
+ avec valeurs</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants>
+                <Iteration>
+                  <Position>752.5;519.5</Position>
+                  <StyleLien>1</StyleLien>
+                  <Titre>pour i allant de
+ 0 à nbCartes//2</Titre>
+                  <IterationFixe>1</IterationFixe>
+                  <Enfants>
+                    <Action>
+                      <Position>627;612</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>tabCartes.append(2*i)</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                    <Action>
+                      <Position>776;611</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>tabCartes.append(2*i+1)</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </Iteration>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>792;384</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>tabCartes.shuffle()
+</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>1004;291</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>tabVal,
+tabCartes</PreAssertion>
+          <PostAssertion>unePartie.mesCartes</PostAssertion>
+          <Titre>Génération de mesCartes</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants>
+            <Iteration>
+              <Position>1159.5;359.5</Position>
+              <StyleLien>1</StyleLien>
+              <Titre>pour i allant de 0 à tabVal.length()</Titre>
+              <IterationFixe>1</IterationFixe>
+              <Enfants>
+                <Action>
+                  <Position>1024;448</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>nouvelleCarte</PostAssertion>
+                  <Titre>nouvelleCarte ← Carte(tabVal(i), tabCartes(i))</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Action>
+                  <Position>1045;522</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>nouvelleCarte</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>unePartie.mesCartes.
+append(nouvelleCarte)
+</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </Iteration>
+          </Enfants>
+        </Action>
+        <Condition>
+          <Position>1477;297</Position>
+          <StyleLien>1</StyleLien>
+          <estUnique>0</estUnique>
+          <operationsLogiques>
+            <operation>
+              <Titre>SI  nbCartes != unePartie.mesCartes.length()</Titre>
+              <Enfants>
+                <Action>
+                  <Position>1537;375</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>error ← true</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </operation>
+            <operation>
+              <Titre>Sinon</Titre>
+              <Enfants/>
+            </operation>
+          </operationsLogiques>
+        </Condition>
+      </Enfants>
+    </Action>
+    <Action>
+      <Position>464;682</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>joueurs</PreAssertion>
+      <PostAssertion>unePartie.mesJoueurs</PostAssertion>
+      <Titre>Initialisation unePartie.mesJoueurs</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Condition>
+          <Position>157;764</Position>
+          <StyleLien>1</StyleLien>
+          <estUnique>0</estUnique>
+          <operationsLogiques>
+            <operation>
+              <Titre>SI  joueurs.length() >= 2</Titre>
+              <Enfants/>
+            </operation>
+            <operation>
+              <Titre>Sinon</Titre>
+              <Enfants>
+                <Action>
+                  <Position>67;848</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>robot = JoueurMachine()</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Action>
+                  <Position>252;852</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>joueurs.append(robot)</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </operation>
+          </operationsLogiques>
+        </Condition>
+        <Action>
+          <Position>556;768</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>joueurs</PreAssertion>
+          <PostAssertion>unePartie.mesJoueurs</PostAssertion>
+          <Titre>Générer mesJoueurs avec ordre</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants>
+            <Iteration>
+              <Position>718.5;833.5</Position>
+              <StyleLien>1</StyleLien>
+              <Titre>pour i allant de
+ 1 à joueurs.length()</Titre>
+              <IterationFixe>1</IterationFixe>
+              <Enfants>
+                <Action>
+                  <Position>643;920</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>unePartie.mesJoueurs.append(&lt;i, joueurs[i-1]>)</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </Iteration>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>413;767</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>joueurs.shuffle()</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+        <Condition>
+          <Position>1028;776</Position>
+          <StyleLien>1</StyleLien>
+          <estUnique>0</estUnique>
+          <operationsLogiques>
+            <operation>
+              <Titre>SI  joueurs.length() != unePartie.mesJoueurs.length()
+</Titre>
+              <Enfants>
+                <Action>
+                  <Position>1075;847</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>error ← true</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </operation>
+            <operation>
+              <Titre>Sinon</Titre>
+              <Enfants/>
+            </operation>
+          </operationsLogiques>
+        </Condition>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>

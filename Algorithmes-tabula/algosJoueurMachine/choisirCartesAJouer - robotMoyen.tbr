@@ -1,0 +1,132 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>choisirCartesAJouer - robotMoyen</nom>
+  <date_creation>8/11/2022 16:09</date_creation>
+  <Elements>
+    <Action>
+      <Position>478;23</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>mémoireJoueur</PreAssertion>
+      <PostAssertion>coupA, coupB</PostAssertion>
+      <Titre>choixCartesJouees</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Iteration>
+          <Position>381.5;126.5</Position>
+          <StyleLien>1</StyleLien>
+          <Titre>?</Titre>
+          <IterationFixe>0</IterationFixe>
+          <Enfants>
+            <Action>
+              <Position>139;269</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>carteAleatoireA = randint(0, nbCartes)</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Condition>
+              <Position>366;270</Position>
+              <StyleLien>1</StyleLien>
+              <estUnique>0</estUnique>
+              <operationsLogiques>
+                <operation>
+                  <Titre>carteAleatoireA
+PAS DANS mémoireJoueur</Titre>
+                  <Enfants>
+                    <Sortie>
+                      <Position>485;377</Position>
+                    </Sortie>
+                    <Action>
+                      <Position>297;361</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>coupA ← carteAleatoireA</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </operation>
+                <operation>
+                  <Titre>Sinon</Titre>
+                  <Enfants/>
+                </operation>
+              </operationsLogiques>
+            </Condition>
+          </Enfants>
+        </Iteration>
+        <Iteration>
+          <Position>773.5;119.5</Position>
+          <StyleLien>1</StyleLien>
+          <Titre>?</Titre>
+          <IterationFixe>0</IterationFixe>
+          <Enfants>
+            <Action>
+              <Position>603;206</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>carteAleatoireB = randint(0, nbCartes)</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Condition>
+              <Position>849;212</Position>
+              <StyleLien>1</StyleLien>
+              <estUnique>0</estUnique>
+              <operationsLogiques>
+                <operation>
+                  <Titre>carteAleatoireA
+PAS DANS mémoireJoueur</Titre>
+                  <Enfants>
+                    <Condition>
+                      <Position>818;275</Position>
+                      <StyleLien>1</StyleLien>
+                      <estUnique>0</estUnique>
+                      <operationsLogiques>
+                        <operation>
+                          <Titre>carteAleatoireA != carteAleatoireB
+</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>730;360</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>coupB ← carteAleatoireB</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                            <Sortie>
+                              <Position>920;369</Position>
+                            </Sortie>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>Sinon</Titre>
+                          <Enfants/>
+                        </operation>
+                      </operationsLogiques>
+                    </Condition>
+                  </Enfants>
+                </operation>
+                <operation>
+                  <Titre>Sinon</Titre>
+                  <Enfants/>
+                </operation>
+              </operationsLogiques>
+            </Condition>
+          </Enfants>
+        </Iteration>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>

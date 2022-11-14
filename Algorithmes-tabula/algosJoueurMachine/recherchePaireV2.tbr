@@ -1,0 +1,145 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>recherchePaire</nom>
+  <date_creation>8/11/2022 16:07</date_creation>
+  <Elements>
+    <Action>
+      <Position>367;43</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>mémoireJoueur</PreAssertion>
+      <PostAssertion>(indCarteMemA, indCarteMemB)
+</PostAssertion>
+      <Titre>recherchePaire</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Iteration>
+          <Position>397.5;155.5</Position>
+          <StyleLien>1</StyleLien>
+          <Titre>pour i allant de
+ 0 à mémoireJoueur.length()-1</Titre>
+          <IterationFixe>0</IterationFixe>
+          <Enfants>
+            <Condition>
+              <Position>247;254</Position>
+              <StyleLien>1</StyleLien>
+              <estUnique>0</estUnique>
+              <operationsLogiques>
+                <operation>
+                  <Titre>i >= mémoireJoueur.length()</Titre>
+                  <Enfants>
+                    <Sortie>
+                      <Position>326;316</Position>
+                    </Sortie>
+                  </Enfants>
+                </operation>
+                <operation>
+                  <Titre>Sinon</Titre>
+                  <Enfants>
+                    <Iteration>
+                      <Position>401.5;339.5</Position>
+                      <StyleLien>1</StyleLien>
+                      <Titre>pour j allant de
+  0 à mémoireJoueur.length()-1</Titre>
+                      <IterationFixe>1</IterationFixe>
+                      <Enfants>
+                        <Condition>
+                          <Position>311;432</Position>
+                          <StyleLien>1</StyleLien>
+                          <estUnique>0</estUnique>
+                          <operationsLogiques>
+                            <operation>
+                              <Titre>SI  mémoireJoueur[i] = mémoiJoueur[j]
+ET  i = j</Titre>
+                              <Enfants>
+                                <Action>
+                                  <Position>281;520</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>?</PreAssertion>
+                                  <PostAssertion>?</PostAssertion>
+                                  <Titre>indCarteMemA ← i
+indCarteMemB ← j</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>0</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                                <Action>
+                                  <Position>416;521</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>?</PreAssertion>
+                                  <PostAssertion>?</PostAssertion>
+                                  <Titre>trouve ← true</Titre>
+                                  <DetailsVisible>1</DetailsVisible>
+                                  <DetailsVideVisible>0</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                              </Enfants>
+                            </operation>
+                            <operation>
+                              <Titre>On continue</Titre>
+                              <Enfants/>
+                            </operation>
+                          </operationsLogiques>
+                        </Condition>
+                      </Enfants>
+                    </Iteration>
+                    <Condition>
+                      <Position>641;347</Position>
+                      <StyleLien>1</StyleLien>
+                      <estUnique>0</estUnique>
+                      <operationsLogiques>
+                        <operation>
+                          <Titre>trouve = true</Titre>
+                          <Enfants>
+                            <Sortie>
+                              <Position>684;407</Position>
+                            </Sortie>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>On continue</Titre>
+                          <Enfants/>
+                        </operation>
+                      </operationsLogiques>
+                    </Condition>
+                  </Enfants>
+                </operation>
+              </operationsLogiques>
+            </Condition>
+          </Enfants>
+        </Iteration>
+        <Action>
+          <Position>-10;151</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>indCarteMemA, indCarteMemB ← Vide, Vide</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+        <Action>
+          <Position>309;154</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>i ← 0</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+        <Action>
+          <Position>209;153</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>trouve ← false</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>
