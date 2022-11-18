@@ -2,86 +2,149 @@
 <!DOCTYPE Tabula_Rasa>
 <Algorithme>
   <nom>ConstrMemory</nom>
-  <date_creation>3/11/2022 16:02</date_creation>
+  <date_creation>18/11/2022 14:45</date_creation>
   <Elements>
     <Action>
-      <Position>527;92</Position>
+      <Position>576;92</Position>
       <StyleLien>2</StyleLien>
-      <PreAssertion>unePartie, JoueurCrea, nbJoueursVoulus</PreAssertion>
-      <PostAssertion>unePartie</PostAssertion>
-      <Titre>unePartie ← Memory(Joueur, int)</Titre>
+      <PreAssertion>difficulteBot</PreAssertion>
+      <PostAssertion>unMemory</PostAssertion>
+      <Titre>unMemory ← Memory(int)</Titre>
       <DetailsVisible>1</DetailsVisible>
       <DetailsVideVisible>1</DetailsVideVisible>
       <Enfants>
         <Action>
-          <Position>533;195</Position>
+          <Position>584;198</Position>
           <StyleLien>2</StyleLien>
-          <PreAssertion>JoueurCrea, nbJoueursVoulus</PreAssertion>
-          <PostAssertion>?</PostAssertion>
+          <PreAssertion>difficulteBot</PreAssertion>
+          <PostAssertion>unMemory</PostAssertion>
           <Titre>Initialisation des variables</Titre>
           <DetailsVisible>1</DetailsVisible>
-          <DetailsVideVisible>0</DetailsVideVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
           <Enfants>
             <Action>
-              <Position>107;318</Position>
-              <StyleLien>1</StyleLien>
-              <PreAssertion>nbJoueursVoulus</PreAssertion>
-              <PostAssertion>?</PostAssertion>
-              <Titre>unePartie.setNbJoueurs
-(nbJoueursVoulus)</Titre>
-              <DetailsVisible>1</DetailsVisible>
-              <DetailsVideVisible>0</DetailsVideVisible>
-              <Enfants/>
-            </Action>
-            <Action>
-              <Position>553;315</Position>
-              <StyleLien>1</StyleLien>
-              <PreAssertion>JoueurCrea</PreAssertion>
-              <PostAssertion>?</PostAssertion>
-              <Titre>unePartie.ajouterJoueur
-(JoueurCrea)</Titre>
-              <DetailsVisible>1</DetailsVisible>
-              <DetailsVideVisible>0</DetailsVideVisible>
-              <Enfants/>
-            </Action>
-            <Action>
-              <Position>996;316</Position>
+              <Position>157;291</Position>
               <StyleLien>2</StyleLien>
-              <PreAssertion>?</PreAssertion>
+              <PreAssertion>difficulteBot</PreAssertion>
               <PostAssertion>?</PostAssertion>
-              <Titre>Initialisation identifiant</Titre>
-              <DetailsVisible>0</DetailsVisible>
-              <DetailsVideVisible>1</DetailsVideVisible>
+              <Titre>Initialisation des Joueurs</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
               <Enfants>
                 <Action>
-                  <Position>519;442</Position>
-                  <StyleLien>1</StyleLien>
-                  <PreAssertion>?</PreAssertion>
-                  <PostAssertion>nbParties</PostAssertion>
-                  <Titre>On récupère le nombre de parties de la base</Titre>
-                  <DetailsVisible>1</DetailsVisible>
-                  <DetailsVideVisible>0</DetailsVideVisible>
-                  <Enfants/>
-                </Action>
-                <Action>
-                  <Position>906;445</Position>
+                  <Position>112;382</Position>
                   <StyleLien>1</StyleLien>
                   <PreAssertion>?</PreAssertion>
                   <PostAssertion>?</PostAssertion>
-                  <Titre>unePartie.setIdentifiant(
-nbParties + 1)</Titre>
+                  <Titre>Joueur1← JoueurHumain()</Titre>
                   <DetailsVisible>0</DetailsVisible>
                   <DetailsVideVisible>1</DetailsVideVisible>
                   <Enfants/>
                 </Action>
+                <ConditionMultiple>
+                  <Position>401.5;393</Position>
+                  <StyleLien>0</StyleLien>
+                  <Titre>difficulteBot</Titre>
+                  <operationsLogiques>
+                    <operation>
+                      <Titre>1</Titre>
+                      <Enfants>
+                        <Action>
+                          <Position>219;508</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>?</PostAssertion>
+                          <Titre>Joueur2← MachineFacile</Titre>
+                          <DetailsVisible>0</DetailsVisible>
+                          <DetailsVideVisible>1</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                      </Enfants>
+                    </operation>
+                    <operation>
+                      <Titre>2</Titre>
+                      <Enfants>
+                        <Action>
+                          <Position>360;573</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>?</PostAssertion>
+                          <Titre>Joueur2← MachineMoyenne</Titre>
+                          <DetailsVisible>0</DetailsVisible>
+                          <DetailsVideVisible>1</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                      </Enfants>
+                    </operation>
+                    <operation>
+                      <Titre>Sinon</Titre>
+                      <Enfants>
+                        <Action>
+                          <Position>503;507</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>?</PostAssertion>
+                          <Titre>Joueur2← MachineDifficile</Titre>
+                          <DetailsVisible>0</DetailsVisible>
+                          <DetailsVideVisible>1</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                      </Enfants>
+                    </operation>
+                  </operationsLogiques>
+                </ConditionMultiple>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>818;304</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Ajout des joueurs à l'objet unMemory</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants>
                 <Action>
-                  <Position>1164;449</Position>
+                  <Position>651;397</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>Joueur1</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>unMemory.ajouterJoueur
+(Joueur1)</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Action>
+                  <Position>969;403</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>Joueur2</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>unMemory.ajouterJoueur
+(Joueur2)</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>1400;303</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Modification du nombre de joueurs</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>1389;402</Position>
                   <StyleLien>1</StyleLien>
                   <PreAssertion>?</PreAssertion>
                   <PostAssertion>?</PostAssertion>
-                  <Titre>On place cette partie dans la base</Titre>
-                  <DetailsVisible>1</DetailsVisible>
-                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Titre>unMemory.setNbJoueurs(2)</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
                   <Enfants/>
                 </Action>
               </Enfants>
