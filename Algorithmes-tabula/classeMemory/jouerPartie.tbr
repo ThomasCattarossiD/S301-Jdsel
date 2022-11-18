@@ -2,13 +2,13 @@
 <!DOCTYPE Tabula_Rasa>
 <Algorithme>
   <nom>jouerPartie</nom>
-  <date_creation>7/11/2022 15:15</date_creation>
+  <date_creation>18/11/2022 11:45</date_creation>
   <Elements>
     <Action>
-      <Position>665;120</Position>
+      <Position>431;119</Position>
       <StyleLien>2</StyleLien>
-      <PreAssertion>unePartie</PreAssertion>
-      <PostAssertion>bool</PostAssertion>
+      <PreAssertion>unMemory</PreAssertion>
+      <PostAssertion>?</PostAssertion>
       <Titre>unePartie.jouerPartie()</Titre>
       <DetailsVisible>1</DetailsVisible>
       <DetailsVideVisible>1</DetailsVideVisible>
@@ -39,13 +39,17 @@
                   <Enfants>
                     <Condition>
                       <Position>259.5;503</Position>
-                      <StyleLien>1</StyleLien>
+                      <StyleLien>0</StyleLien>
                       <estUnique>0</estUnique>
                       <operationsLogiques>
                         <operation>
-                          <Titre>unePartie.mesCartes.&#xd;
+                          <Titre>unMemory.mesCartes.
 size() = 0</Titre>
-                          <Enfants/>
+                          <Enfants>
+                            <Sortie>
+                              <Position>340;589</Position>
+                            </Sortie>
+                          </Enfants>
                         </operation>
                       </operationsLogiques>
                     </Condition>
@@ -65,7 +69,7 @@ size() = 0</Titre>
                       <StyleLien>1</StyleLien>
                       <PreAssertion>?</PreAssertion>
                       <PostAssertion>?</PostAssertion>
-                      <Titre>mesJoueurs[indice].&#xd;
+                      <Titre>mesJoueurs[indice].&#xd;&#xd;
 methodeDeJeu()</Titre>
                       <DetailsVisible>1</DetailsVisible>
                       <DetailsVideVisible>0</DetailsVideVisible>
@@ -76,7 +80,7 @@ methodeDeJeu()</Titre>
                 <Action>
                   <Position>1272;417</Position>
                   <StyleLien>2</StyleLien>
-                  <PreAssertion>indice,&#xd;
+                  <PreAssertion>indice,&#xd;&#xd;
 nbJoueurs</PreAssertion>
                   <PostAssertion>indice</PostAssertion>
                   <Titre>Modification indice</Titre>
@@ -88,7 +92,7 @@ nbJoueurs</PreAssertion>
                       <StyleLien>1</StyleLien>
                       <PreAssertion>?</PreAssertion>
                       <PostAssertion>?</PostAssertion>
-                      <Titre>indice ← &#xd;
+                      <Titre>indice ← &#xd;&#xd;
 (indice + 1)%nbJoueurs</Titre>
                       <DetailsVisible>1</DetailsVisible>
                       <DetailsVideVisible>0</DetailsVideVisible>
@@ -99,16 +103,6 @@ nbJoueurs</PreAssertion>
               </Enfants>
             </Iteration>
           </Enfants>
-        </Action>
-        <Action>
-          <Position>1284;230</Position>
-          <StyleLien>1</StyleLien>
-          <PreAssertion>?</PreAssertion>
-          <PostAssertion>?</PostAssertion>
-          <Titre>Retourner error</Titre>
-          <DetailsVisible>0</DetailsVisible>
-          <DetailsVideVisible>1</DetailsVideVisible>
-          <Enfants/>
         </Action>
         <Action>
           <Position>167;231</Position>
@@ -134,7 +128,7 @@ nbJoueurs</PreAssertion>
               <StyleLien>1</StyleLien>
               <PreAssertion>?</PreAssertion>
               <PostAssertion>?</PostAssertion>
-              <Titre>nbJoueurs ← unePartie.getNbJoueur()</Titre>
+              <Titre>nbJoueurs ← unMemory.getNbJoueur()</Titre>
               <DetailsVisible>0</DetailsVisible>
               <DetailsVideVisible>1</DetailsVideVisible>
               <Enfants/>
