@@ -42,6 +42,10 @@ class Memory {
         array_diff($this->$mesJoueurs, [$unJoueur]);
     }
 
+    public function existeJoueur($unJoueur){
+        return in_array($unJoueur, $this->$mesJoueurs);
+    }
+
     public function viderJoueurs(){
         unset($this->$mesJoueurs);
     }
@@ -52,6 +56,10 @@ class Memory {
 
     public function retirerCarte($uneCarte){
         array_diff($this->$mesCartes, [$uneCarte]);
+    }
+
+    public function existeCarte($uneCarte){
+        return in_array($uneCarte, $this->$mesCartes);
     }
 
     public function viderCartes(){
@@ -65,7 +73,13 @@ class Memory {
     }
 
     // METHODES Métier
-
+    public function afficherJeu(){
+        echo "<article class='grilleJeu'>";
+        foreach($this->getMesCartes() as $uneCarte){
+            $uneCarte.afficherCarte();
+        }
+        echo "</article>";
+    }
 }
 
 
