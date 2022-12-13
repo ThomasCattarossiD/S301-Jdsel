@@ -1,82 +1,105 @@
 <?php
-include ("Joueur.php");
-include ("Carte.php");
 
 class Memory {
     // ATTRIBUTS
+    const NB_CARTES = 36;      // Le nombre de cartes
     private int $nbJoueurs;     // Un entier contenant le nombre de joueurs durant le jeu
     private array $mesJoueurs;    // Une array contenant les joueurs jouant au Jeu
     private array $mesCartes;     // Une array contenant les cartes restantes en Jeu
 
     // CONSTRUCTEUR
-    public function __construct(){}
+    public function __construct(){
+        $this->mesCartes = array();
+        $this->mesJoueurs = array();
+    }
 
     // ENCAPSULATION
-    public function getNbJoueurs(){
-        return $this->$nbJoueurs;
+    function getNbJoueurs(){
+        return $this->nbJoueurs;
     }
-    public function setNbJoueurs($nombre){
-        $this->$nbJoueurs = $nombre;
-    }
-
-    public function getMesJoueurs(){
-        return $this->$mesJoueurs;
-    }
-    public function setMesJoueurs($liste){
-        $this->$mesJoueurs = $liste;
+    function setNbJoueurs($nombre){
+        $this->nbJoueurs = $nombre;
     }
 
-    public function getMesCartes(){
-        return $this->$mesCartes;
+    function getMesJoueurs(){
+        return $this->mesJoueurs;
     }
-    public function setMesCartes($liste){
-        $this->$mesCartes = $liste;
+    function setMesJoueurs($liste){
+        $this->mesJoueurs = $liste;
+    }
+
+    function getMesCartes(){
+        return $this->mesCartes;
+    }
+    function setMesCartes($liste){
+        $this->mesCartes = $liste;
     }
 
     // METHODES Spécifiques
-    public function ajouterJoueur($unJoueur){
-        array_push($this->$mesJoueurs, $unJoueur);
+    function ajouterJoueur($unJoueur){
+        $liste = $this->getMesJoueurs();
+        array_push($liste, $unJoueur);
+        $this->setMesJoueurs($liste);
     }
 
-    public function retirerJoueur($unJoueur){
-        array_diff($this->$mesJoueurs, [$unJoueur]);
+    function retirerJoueur($unJoueur){
+        $liste = array_diff($this->getMesJoueurs(), [$unJoueur]);
+        $this->setMesJoueurs($liste);
     }
 
-    public function existeJoueur($unJoueur){
-        return in_array($unJoueur, $this->$mesJoueurs);
+    function existeJoueur($unJoueur){
+        return in_array($unJoueur, $this->getMesJoueurs());
     }
 
-    public function viderJoueurs(){
-        unset($this->$mesJoueurs);
+    function ajouterCarte($uneCarte){
+        $liste = $this->getMesCartes();
+        array_push($liste, $uneCarte);
+        $this->setMesCartes($liste);
     }
 
-    public function ajouterCarte($uneCarte){
-        array_push($this->$mesCartes, $uneCarte);
+    function retirerCarte($uneCarte){
+        $liste = array_diff($this->getMesCartes(), [$uneCarte]);
+        $this->setMesCartes($liste);
     }
 
-    public function retirerCarte($uneCarte){
-        array_diff($this->$mesCartes, [$uneCarte]);
-    }
-
-    public function existeCarte($uneCarte){
-        return in_array($uneCarte, $this->$mesCartes);
-    }
-
-    public function viderCartes(){
-        unset($this->$mesCartes);
+    function existeCarte($uneCarte){
+        return in_array($uneCarte, $this->getMesCartes());
     }
 
     // METHODE Usuelle
-    public function toString(){
-        $message = "Ce Jeu du Memory a " . (string)getNbJoueurs() . " Joueurs : ";
+    function toString(){
+        $message = "Ce Jeu du Memory a " . (string)$this->getNbJoueurs() . " Joueurs : ";
         return $message;
     }
 
     // METHODES Métier
-    public function afficherJeu(){
+    function initCartes(){
+        $lettres = array(0=>'A', 1=>'B', 2=>'C', 3=>'D', 4=>'E', 5=>'F');
+        $listeValeurs = array();
+        for($i = 1; $i <= (Memory::NB_CARTES) / 2; $i ++){
+            array_push($listeValeurs, $i, $i);
+        }
+        $indice = 0;
+        for($i = 0; $i < (Memory::NB_CARTES); $i ++){
+            $reste = $indice % sizeof($lettres);
+            if($reste == 0){
+                $quotient = $indice / sizeof($lettres);
+                $lettreUne = $lettres[$quotient];
+            }
+            $reste = $i % sizeof($lettres);
+            $message = $lettreUne . $lettres[$reste];
+            $cle = array_rand($listeValeurs);
+            $nouvelleCarte = new Carte($message, $listeValeurs[$cle]);
+            $this->ajouterCarte($nouvelleCarte);
+            array_diff_key($listeValeurs, array($cle));
+            $indice += 1;
+        }
+    }
+
+    function afficherJeu(){
         echo "<article class='grilleJeu'>";
         foreach($this->getMesCartes() as $uneCarte){
-            $uneCarte.afficherCarte();
+            $uneCarte->afficherCarte();
         }
         echo "</article>";
     }

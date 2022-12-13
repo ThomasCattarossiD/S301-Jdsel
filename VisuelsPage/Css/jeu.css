@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.grilleJeu {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 75px 75px 75px 75px 75px 75px;
+}
+
+.unA {
+    grid-row: 1;
+}
+
+.unB {
+    grid-row: 2;
+}
+
+.unC {
+    grid-row: 3;
+}
+
+.unD {
+    grid-row: 4;
+}
+
+.unE {
+    grid-row: 5;
+}
+
+.unF {
+    grid-row: 6;
+}
+
+.deuxA {
+    grid-column: 1;
+}
+
+.deuxB {
+    grid-column: 2;
+}
+
+.deuxC {
+    grid-column: 3;
+}
+
+.deuxD {
+    grid-column: 4;
+}
+
+.deuxE {
+    grid-column: 5;
+}
+
+.deuxF {
+    grid-column: 6;
+}
+
+.carte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    border: 1px solid black;
+}
