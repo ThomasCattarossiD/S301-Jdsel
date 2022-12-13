@@ -71,14 +71,20 @@ class Carte {
         $this->estRetournee = !$this->estRetournee;
     }
 
+    // On cherche à afficher la carte
     public function afficherCarte(){
+        // On vérifie si la carte est retournée
         if($this->estRetournee){
+            // Si la carte est retournée on souhaite afficher sa valeur
             $affiche = $this->getValeur();
         }
         else{
+            // Sinon on affiche sa position
             $affiche = $this->getPosition();
         }
+        // On sépare la position de la carte en deux caractères, le premier correspond à la ligne et le second à la colonne
         $liste = str_split($this->positionCarte);
+        // On place la carte dans la grille, les deux premières classes pour son placement et la dernière pour ce à quoi elle ressemble
         echo "<p class='un$liste[0] deux$liste[1] carte'>$affiche</p>";
     }
 }
