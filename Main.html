@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Memory</title>
+        <link rel="stylesheet" href="VisuelsPage/Css/jeu.css">
+    </head>
+    <body>
+        <article id="lesScores">
+
+        </article>
+        <article class="grilleJeu" id="laGrilleDeJeu">
+
+        </article>
+        <article>
+            <p>Saisissez les coordonnées (AA) de la carte que vous souhaitez jouer</p>
+            <h5 id="affichage"></h5>
+            <input type="text" id="leCoup">
+            <button type="button" id="leBoutonValider">Valider</button>
+        </article>
+        <script type="module">
+            import {Memory} from "./Classes/Memory.js";
+            import {JoueurHumain} from "./Classes/typeJoueurs/joueurHumain.js"
+            
+            let leMemory = new Memory();
+            let unJoueur = new JoueurHumain("J1");
+            unJoueur.lierMonMemory(leMemory);
+            let deuxJoueur = new JoueurHumain("J2");
+            deuxJoueur.lierMonMemory(leMemory);
+            leMemory.jouerJeu();
+            
+        </script>
+    </body>
+</html>
