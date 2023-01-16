@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="S301" version="4">
+  <OBJECT>
+    <ID name="S301" mc="Standard.Project" uid="c66b6abd-37bc-420a-91b2-e9e0a08f8381"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[S301]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="s301" mc="Standard.Package" uid="d9827cca-8ec7-4c8f-9ec4-08c2ddc224ac"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="S301" mc="Infrastructure.DiagramSet" uid="6e69ba20-e014-4c86-8f2b-1df0189430f9"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

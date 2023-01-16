@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="s301" version="4">
+  <OBJECT>
+    <ID name="s301" mc="Standard.Package" uid="d9827cca-8ec7-4c8f-9ec4-08c2ddc224ac"/>
+    <PID name="S301" mc="Standard.Project" uid="c66b6abd-37bc-420a-91b2-e9e0a08f8381"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[s301]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Joueur" mc="Standard.Class" uid="cc918400-9945-4643-b452-e8a6cb808925"/>
+        <COMPID name="Message" mc="Standard.Class" uid="af393b7b-41d3-402f-86b2-5af223938d25"/>
+        <COMPID name="Jeu" mc="Standard.Class" uid="d228c47c-d828-47be-b609-3d2348b8a125"/>
+        <COMPID name="Theme" mc="Standard.Class" uid="7450c6a8-f778-4d45-9f1f-58788619771c"/>
+        <COMPID name="Partie" mc="Standard.Class" uid="461ac580-a68c-4ff3-9083-6ac379cab806"/>
+        <COMPID name="Moderateur" mc="Standard.Class" uid="a5d89fb0-2d11-458c-8397-efa850727e72"/>
+        <COMPID name="Amis" mc="Standard.Class" uid="d2862112-4e49-48a3-9a19-fec70c60ed58"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de classe s301" mc="Standard.ClassDiagram" uid="c77ea5d0-17de-4eb6-810a-f6df0ace673c"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
