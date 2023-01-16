@@ -27,13 +27,6 @@ form {
     grid-auto-flow: row;
 }
 
-section {
-    margin-bottom: 15px;
-    margin-left: 25%;
-    margin-right: 25%;
-    text-align: left;
-}
-
 button {
     background-color: steelblue;
     border-color: royalblue;
@@ -61,13 +54,13 @@ button {
         margin-right: 40%;
     }
 
-    section {
-        margin-left: 25px;
-    }
-
     button {
         border-radius: 12px;
-        height: 150%;
+        height: 15%;
         font-size: medium;
+    }
+
+    form > button {
+        height : auto;
     }
 }

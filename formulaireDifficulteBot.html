@@ -4,31 +4,98 @@
         <meta charset="utf-8"> 
         <title>Choix de la Difficulté</title>
         <link rel="stylesheet" href="VisuelsPage/css/styleFormulaire.css">
+        <script type="text/javascript">
+            function afficherFormulaire() {
+                // On récupère l'identifiant du bouton radio
+                let boutonRadio = document.getElementById('estMachine')
+                // On récupère l'article contenant le formulaire des niveaux de la machine
+                let articleForm = document.getElementById('formNiveau')
+                // On récupère le lien qui permet d'orienter directement vers la page main.html
+                lien = document.getElementById('lienMain')
+
+                // Si le bouton est appuyé on affiche le formulaire 
+                if(boutonRadio.checked){
+                    if(lien.innerHTML != ""){
+                        // On enlève le bouton dans le lien
+                        lien.innerHTML = ""
+
+                        // On affiche le titre de cette partie du formulaire
+                        titre = document.createElement("h3")
+                        titre.innerText = "Veuillez sélectionner la difficulté de votre adversaire."
+
+                        // On créé le formulaire
+                        formulaire = document.createElement("form")
+                        formulaire.action = "Fichiers-php/niveauMachine.php"
+                        formulaire.method = "POST"
+
+                        // On créé la liste déroulante des niveaux 
+                        listeDeroulante = document.createElement("select")
+                        listeDeroulante.name = "nivMachine"
+
+                        // On créé les options pour la liste déroulantes et on les ajoute
+                        libelle = document.createElement("label")
+                        libelle.innerText ="Le niveau de la machine"
+                        nivFacile = document.createElement("option")
+                        nivFacile.value="Facile"
+                        nivFacile.innerText = "Facile"
+                        nivMoyen = document.createElement("option")
+                        nivMoyen.value="Moyen"
+                        nivMoyen.innerText = "Moyen"
+                        nivDifficile = document.createElement("option")
+                        nivDifficile.value="Difficile"
+                        nivDifficile.innerText = "Difficile"
+
+                        // On créé le bouton de validation
+                        bouton = document.createElement("button")
+                        bouton.type = "submit"
+                        bouton.innerText= "Valider"
+
+                        // On ajoute les éléments enfants à leurs parents
+                        listeDeroulante.appendChild(libelle)
+                        listeDeroulante.appendChild(nivFacile)
+                        listeDeroulante.appendChild(nivMoyen)
+                        listeDeroulante.appendChild(nivDifficile)
+                        formulaire.appendChild(bouton)
+                        formulaire.appendChild(listeDeroulante)
+                        articleForm.appendChild(titre)
+                        articleForm.appendChild(formulaire)
+                    }
+
+                }
+                else{
+                    if(articleForm.innerHTML != ""){
+                        // On efface le formulaire
+                        articleForm.innerHTML = ""
+
+                        // On créé le bouton de validation
+                        bouton = document.createElement("button")
+                        bouton.innerText= "Continuer"
+
+                        // On place le bouton dans le lien
+                        lien.appendChild(bouton)
+                    }
+                    
+                }
+            }
+        </script>
     </head>
     <body>
         <article>
-            <h2>Veuillez sélectionner la difficulté de votre adversaire.</h2>
-
-            <!--Le formulaire exécutant le fichier Main.php-->
-            <form action="Main.php">
-                <!--Bouton radio pour un bot de niveau facile-->
-                <section>
-                    <input type="radio" id="facile" class="radioButton" name="difficulte">
-                    <label for="facile">Facile</label>
-                </section>
-                <!--Bouton radio pour un bot de niveau moyen-->
-                <section>
-                    <input type="radio" id="moyen" class="radioButton" name="difficulte">
-                    <label for="moyen">Moyen</label>
-                </section>
-                <!--Bouton radio pour un bot de niveau difficile-->
-                <section>
-                    <input type="radio" id="difficile" class="radioButton" name="difficulte">
-                    <label for="difficile">Difficile</label>
-                </section>
-                <!--Bouton permettant de valider les informations saisies-->
-                <button type="submit">Valider</button>
-            </form>
+            <article>
+                <h3>Joueur1 : </h3><input type="text" placeholder="Joueur1" name="nomJoueur1">
+            </article>
+            <article>
+                <h3>Joueur2 : </h3><input type="text" placeholder="Joueur2" name="nomJoueur2">
+                <br/>
+                <h4>Joueur2 Machine :</h4><input type="checkbox" id="estMachine" class="checkBoxButton" name="estMachine">
+            </article>
         </article>
+        <article id="formNiveau">
+        </article>
+        <a href="Fichiers-php/niveauMachine.php" id="lienMain"></a>
+        <script type="text/javascript">
+            setInterval(afficherFormulaire, 1000)
+            
+        </script>
     </body>
 </html>
