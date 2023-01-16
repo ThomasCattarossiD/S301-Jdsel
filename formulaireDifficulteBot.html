@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"> 
+        <title>Choix de la Difficulté</title>
+        <link rel="stylesheet" href="VisuelsPage/css/styleFormulaire.css">
+    </head>
+    <body>
+        <article>
+            <h2>Veuillez sélectionner la difficulté de votre adversaire.</h2>
+
+            <!--Le formulaire exécutant le fichier Main.php-->
+            <form action="Main.php">
+                <!--Bouton radio pour un bot de niveau facile-->
+                <section>
+                    <input type="radio" id="facile" class="radioButton" name="difficulte">
+                    <label for="facile">Facile</label>
+                </section>
+                <!--Bouton radio pour un bot de niveau moyen-->
+                <section>
+                    <input type="radio" id="moyen" class="radioButton" name="difficulte">
+                    <label for="moyen">Moyen</label>
+                </section>
+                <!--Bouton radio pour un bot de niveau difficile-->
+                <section>
+                    <input type="radio" id="difficile" class="radioButton" name="difficulte">
+                    <label for="difficile">Difficile</label>
+                </section>
+                <!--Bouton permettant de valider les informations saisies-->
+                <button type="submit">Valider</button>
+            </form>
+        </article>
+    </body>
+</html>
