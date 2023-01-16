@@ -25,7 +25,24 @@
             let leMemory = new Memory();
             let unJoueur = new JoueurHumain("J1");
             unJoueur.lierMonMemory(leMemory);
-            let deuxJoueur = new JoueurHumain("J2");
+            let deuxJoueur
+            switch(typeJoueur){
+                case "none":
+                    deuxJoueur = new JoueurHumain("J2");
+                    break;
+                case "Facile":
+                    alert("La machine est de niveau Facile")
+                    deuxJoueur = new JoueurHumain("J2");
+                    break;
+                case "Moyen":
+                    alert("La machine est de niveau Moyen")
+                    deuxJoueur = new JoueurHumain("J2");
+                    break;
+                case "Difficile":
+                    alert("La machine est de niveau Difficile")
+                    deuxJoueur = new JoueurHumain("J2");
+                    break;
+            }
             deuxJoueur.lierMonMemory(leMemory);
             leMemory.jouerJeu();
             
