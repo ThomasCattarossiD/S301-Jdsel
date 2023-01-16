@@ -8,6 +8,7 @@
 
 // On inclue la classe Memory
 import {Memory} from "./Memory.js"
+import {JoueurMachine} from "./typeJoueurs/joueurMachine.js"
 
 // On créé la classe Joueur
 export class Joueur {
@@ -22,6 +23,9 @@ export class Joueur {
         // Si le constructeur appelé est celui de la classe abstraite Joueur on renvoie une Erreur
         if(this.constructor === Joueur){
             throw new TypeError('Classe abstraite "Joueur" ne peut pas être instanciée directement')
+        }
+        else if(this.constructor === JoueurMachine){
+            throw new TypeError('Classe abstraite "JoueurMachine" ne peut pas être instanciée directement')
         }
         // Sinon on continue
 
