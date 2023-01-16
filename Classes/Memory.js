@@ -251,6 +251,39 @@ export class Memory{
         }
     }
 
+    // On traite la fin du jeu
+    finirJeu(){
+        let egalite = false // Un bouléen indiquant s'il y a eu égalité ou non au niveau du plus grand score
+        let pseudo          // Le pseudonyme de la personne ayant le score le plus grand
+        let score = 0       // Le score le plus grand 
+
+        // On fait un parcours complet avec traitement conditionnel
+        for(let i = 0; i < this.#mesJoueurs.length; i++){
+            // Pour chaque joueur si le score est égal au plus grand score
+            if(this.#mesJoueurs[i].getScore() == score){
+                // L'égalité est vraie
+                egalite = true
+            }
+            // Si le score est supérieur au plus grand score
+            else if(this.#mesJoueurs[i].getScore() > score){
+                // L'égalité est fausse
+                egalite = false
+                // On récupère le pseudonyme du joueur dont le score est le plus grand
+                pseudo = this.#mesJoueurs[i].getPseudo()
+                // Le score le plus grand devient le score du joueur
+                score = this.#mesJoueurs[i].getScore()
+            }
+        }
+
+        // S'il y a eu une égalité on l'affiche
+        if(egalite){
+            window.alert("Il y a égalité")
+        }
+        else{
+            window.alert("Le joueur " + pseudo + " a gagné avec " + score + " paires.")
+        }
+    }
+
     // On souhaite afficher le jeu
     afficherJeu(){
 
