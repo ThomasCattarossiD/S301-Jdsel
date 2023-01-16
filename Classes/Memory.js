@@ -274,17 +274,16 @@ export class Memory{
 
     // Cette fonction permet la vérification du coup d'un Joueur que l'on connait par son pseudonyme
     async unJoueurAJoue(pseudonyme){
+        
         // On récupère les indexs des coups du joueur
         let coup1 = localStorage.getItem("Coup1")
         let coup2 = localStorage.getItem("Coup2")
-
         // On dit à tous les joueurs sauf celui qui vient de jouer que l'un d'entre eux à joué
-        for(let i = 0; i < this.#mesJoueurs.length(); i++){
+        for(let i = 0; i < this.#mesJoueurs.length; i++){
             if(this.#mesJoueurs[i].getPseudo() != pseudonyme){
                 this.#mesJoueurs[i].retenirCartesHumains(localStorage.getItem("Coup1"), localStorage.getItem("Coup2"))
             }
         }
-
         // Si les cartes ont les mêmes valeurs
         if(this.#mesCartes[this.retournerIndexParPosition(coup1)].equals(this.#mesCartes[this.retournerIndexParPosition(coup2)])){
             // On attend d'avoir retirer les deux cartes du jeu
@@ -313,7 +312,6 @@ export class Memory{
 
         // On attend un certain temps avant de continuer
         await this.sommeilAffichage()
-
         // On indique que le joueur a tout de même joué une paire de cartes
         localStorage.setItem('paireJouee', 'yes')
 
