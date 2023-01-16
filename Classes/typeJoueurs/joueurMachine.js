@@ -47,6 +47,15 @@ export class JoueurMachine extends Joueur{
         this.#probaOubli=probabilite;
     }
 
+    // Permet de récupérer la valeur numérique de la difficulté de la machine
+    getDifficulte(){
+        return this.#difficulte
+    }
+    // Permet de définir la valeur numérique de la difficulté de la machine
+    setDifficulte(uneDifficulte){
+        this.#difficulte = uneDifficulte
+    }
+
     //METHODES METIERS
     retournerUneCarte(positionCarte){
         // On récupère l'index de la carte dans le jeu memory
@@ -115,15 +124,17 @@ export class JoueurMachine extends Joueur{
 
         await choixUneCarte()
 
-        // Si la machine trouve une paire avec le coup qu'elle vient de jouer
-        unePaire = this.recherchePaires()
-        // Alors
-        if(unePaire){
-            // On lance la fonction pour notifier au Memory que l'on a joué un Coup puis l'on attend la fin de cette fonction
-            await this.notifierCoup()
+        if(this.#difficulte == 3){
+            // Si la machine trouve une paire avec le coup qu'elle vient de jouer
+            unePaire = this.recherchePaires()
+            // Alors
+            if(unePaire){
+                // On lance la fonction pour notifier au Memory que l'on a joué un Coup puis l'on attend la fin de cette fonction
+                await this.notifierCoup()
 
-            // On indique à Javascript qu'il peut reprendre son déroulement normal
-            return Promise.resolve()
+                // On indique à Javascript qu'il peut reprendre son déroulement normal
+                return Promise.resolve()
+            }
         }
 
         await choixUneCarte()
@@ -187,9 +198,6 @@ export class JoueurMachine extends Joueur{
 
     //METHODES ABSTRAITES
     choixUneCarte(){
-        throw new Error('Cette méthode est abstraite dans une classe abstraite')
-    }
-    verifPremierCarte(){
         throw new Error('Cette méthode est abstraite dans une classe abstraite')
     }
 
