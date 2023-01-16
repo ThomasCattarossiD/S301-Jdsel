@@ -57,6 +57,16 @@ export class JoueurMachine extends Joueur{
     //METHODES METIERS
     retournerUneCarte(Carte){
 
+        // Si la estRetournee est vrai, il devient faux
+            if(this.#estRetournee){
+                 this.#estRetournee = false
+                return this.#estRetournee
+            }
+            // Sinon il devient vrai
+            else{
+                this.#estRetournee = true
+                return this.#estRetournee
+            }
     }
     //Permet d'oublier la premiere carte mise dans la mémoire de la machine
     oublierPremierCarte(){
@@ -75,10 +85,11 @@ export class JoueurMachine extends Joueur{
     }
     methodeDeJeu(){
 
+
     }
     //Permet de rechercher un paire existante dans la mémoire de la machine
     recherchePaires(){
-        trouve = false;
+        trouve = false
         indCarteA=null;
         indCarteB=null;
         i=1;
@@ -102,10 +113,10 @@ export class JoueurMachine extends Joueur{
 
     //METHODES ABSTRAITES
     choixUneCarte(){
-
+        throw new Error('Cette méthode est abstraite dans une classe abstraite')
     }
     verifPremierCarte(){
-
+        throw new Error('Cette méthode est abstraite dans une classe abstraite')
     }
 
 }
