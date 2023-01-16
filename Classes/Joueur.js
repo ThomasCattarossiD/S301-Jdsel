@@ -24,7 +24,9 @@ export class Joueur {
         if(this.constructor === Joueur){
             throw new TypeError('Classe abstraite "Joueur" ne peut pas être instanciée directement')
         }
-        else if(this.constructor === JoueurMachine)
+        else if(this.constructor === JoueurMachine){
+            throw new TypeError('Classe abstraite "JoueurMachine" ne peut pas être instanciée directement')
+        }
         // Sinon on continue
 
         // On définit le pseudo et le score
