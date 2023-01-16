@@ -87,15 +87,15 @@ export class Memory{
         // On parcourt la liste des cartes
         for(let i = 0; i < this.#mesCartes.length; i ++){
             // Si la Carte est présente dans la liste à l'indice i
-            if(this.#mesCartes[i] == uneCarte){
+            if(this.#mesCartes[i].getPosition() == uneCarte){
                 // On retire la carte
                 this.#mesCartes.splice(i, 1)
                 // On récupère la liste des positions valables du stockage local
                 let listePositions = localStorage.getItem('lesPositions')
                 // On enlève la position de la carte
-                listePositions.slice(listePositions.indexOf(uneCarte.getPosition()), 1)
+                let lesPositions = listePositions.substring(0, listePositions.indexOf(uneCarte))+ listePositions.substring(listePositions.indexOf(uneCarte) + 3)
                 // On replace la liste des positions valables au même endroit
-                localStorage.setItem('lesPositions', listePositions)
+                localStorage.setItem('lesPositions', lesPositions)
                 // On retourne vrai tout en disant à Javascript qu'il peut reprendre son cours normal
                 return Promise.resolve(true)
             }
@@ -216,6 +216,8 @@ export class Memory{
         let indice = 0      // L'indice du joueur qui est actuellement entrain de jouer
 
         // TRAITEMENTS
+        // On place dans le stockage local l'information que la partie est en cours
+        localStorage.setItem("EtatPartie", "EnCours")
         // On commence par placer dans le stockage local qu'une paire a été trouvée mais qu'aucune n'a été jouée
         localStorage.setItem('paireTrouvee', 'yes') // Si on ne place pas ceci tous les joueurs passeront leurs tours de force
         localStorage.setItem('paireJouee', 'no')    // Si on ne place pas ceci les joueurs ne pourront pas jouer durant leur tour
@@ -225,7 +227,6 @@ export class Memory{
 
         // On continue à joueur tant qu'il y a des cartes
         while(this.#mesCartes.length != 0){
-
             // On créé le message déclarant qui joue
             let message = this.#mesJoueurs[indice].getPseudo() + " joue."
 
@@ -239,7 +240,11 @@ export class Memory{
                 // Le programme attend que le joueur ait fini de joueur
                 await this.#mesJoueurs[indice].methodeDeJeu()
 
-                // Si le joueur a fini de joueur alors il a joué une paire, pour que le prochain puisse jouer on remodifie le stockage local
+                if(this.#mesCartes.length == 0){
+                    break;
+                }
+
+                // Si le joueur a fini de jouer alors il a joué une paire, pour que le prochain puisse jouer on remodifie le stockage local
                 localStorage.setItem('paireJouee', 'no')
             }
 
@@ -249,6 +254,9 @@ export class Memory{
             // On modifie cela pour que les joueurs suivants puissent jouer
             localStorage.setItem('paireTrouvee', 'yes')
         }
+        
+        this.finirJeu()
+
     }
 
     // On traite la fin du jeu
@@ -320,8 +328,8 @@ export class Memory{
         // Si les cartes ont les mêmes valeurs
         if(this.#mesCartes[this.retournerIndexParPosition(coup1)].equals(this.#mesCartes[this.retournerIndexParPosition(coup2)])){
             // On attend d'avoir retirer les deux cartes du jeu
-            await this.retirerCarte(this.#mesCartes[this.retournerIndexParPosition(coup1)])
-            await this.retirerCarte(this.#mesCartes[this.retournerIndexParPosition(coup2)])
+            await this.retirerCarte(coup1)
+            await this.retirerCarte(coup2)
             
             // On récupère l'indice du joueur
             let indice = this.retournerIndexParPseudonyme(pseudonyme)

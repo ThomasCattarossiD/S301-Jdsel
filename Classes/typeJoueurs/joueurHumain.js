@@ -55,7 +55,7 @@ export class JoueurHumain extends Joueur{
             await this.btnClick()
 
             // On désactive le bouton
-            bouton.disabled = true
+            //bouton.disabled = true
 
             // On récupère la liste des positions valables
             let listePositions = localStorage.getItem('lesPositions')
@@ -86,7 +86,7 @@ export class JoueurHumain extends Joueur{
             }
 
             // On réactive le bouton
-            bouton.disabled = false;
+            //bouton.disabled = false;
         }
         
         // La prochaine carte est par défaut non valable
@@ -98,7 +98,7 @@ export class JoueurHumain extends Joueur{
             await this.btnClick()
 
             // On désactive le bouton valider
-            bouton.disabled = true
+            //bouton.disabled = true
 
             // On récupère la liste des positions valables
             let listePositions = localStorage.getItem('lesPositions')
@@ -128,7 +128,7 @@ export class JoueurHumain extends Joueur{
                 affichage.textContent = "Veuillez saisir l'une des coordonnées affichées dans le tableau"
 
                 // On réactive le bouton
-                bouton.disabled = false;
+                //bouton.disabled = false;
             }
         }
 

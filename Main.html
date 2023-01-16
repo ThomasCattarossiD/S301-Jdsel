@@ -18,33 +18,39 @@
             <input type="text" id="leCoup">
             <button type="button" id="leBoutonValider" disabled>Valider</button>
         </article>
+        <button action="formulaireDifficulteBot.html">Retour au formulaire</button>
         <script type="module">
+            if(localStorage.getItem('nivMachine') === null){
+                window.location.replace("formulaireDifficulteBot.html")
+            }
             import {Memory} from "./Classes/Memory.js";
             import {JoueurHumain} from "./Classes/typeJoueurs/joueurHumain.js"
             
             let leMemory = new Memory();
             let unJoueur = new JoueurHumain("J1");
             unJoueur.lierMonMemory(leMemory);
+            let typeJoueur = localStorage.getItem('nivMachine');
             let deuxJoueur 
             switch(typeJoueur){
                 case "none":
-                    deuxJoueur = newJoueurHumain("J2");
+                    deuxJoueur = new JoueurHumain("J2");
                     break;
                 case "Facile":
-                    window.alert("La machine est de niveau Facile")
-                    deuxJoueur = newJoueurHumain("J2");
+                    window.alert("La machine est de niveau Facile");
+                    deuxJoueur = new JoueurHumain("J2");
                     break;
                 case "Moyen":
-                    window.alert("La machine est de niveau Moyen")
-                    deuxJoueur = newJoueurHumain("J2");
+                    window.alert("La machine est de niveau Moyen");
+                    deuxJoueur = new JoueurHumain("J2");
                     break;
                 case "Difficile":
-                    window.alert("La machine est de niveau Difficile")
-                    deuxJoueur = newJoueurHumain("J2");
+                    window.alert("La machine est de niveau Difficile");
+                    deuxJoueur = new JoueurHumain("J2");
                     break;
             }
             deuxJoueur.lierMonMemory(leMemory);
             leMemory.jouerJeu();
+            
             
         </script>
     </body>
