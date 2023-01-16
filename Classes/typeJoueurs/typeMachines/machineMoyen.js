@@ -1,14 +1,14 @@
 /*
  Code : Classe MachineMoyen
  But :  La classe permettant à une machine de niveau moyenne de jouer au Memory
- Date de dernière modification : 16 Janvier 2023
+ Date de dernière modification : 17 janvier 2023
  Auteur : D. Lanusse
  Remarques : Code conforme aux spécification internes données en cours
 */
 
 
 // On importe la classe JoueurMachine
-import { JoueurMachine } from "../joueurMachine"
+import { JoueurMachine } from "../joueurMachine.js"
 
 // On crée la classe MachineMoyen qui étend la classe abstraite JoueurMachine
 export class MachineMoyen extends JoueurMachine{
@@ -26,18 +26,38 @@ export class MachineMoyen extends JoueurMachine{
     }
 
     // METHODES Métier
-    retenirCartesHumains(carte1, carte2){
-        // L'index de la carte en position carte2
-        index = this.getMonMemory().retournerIndexParPosition(carte1)
-        // On récupère la carte en position carte2
-        carte = this.getMonMemory.getMesCartes()[index]
-        // On place la carte dans notre mémoire
-        this.retenirUneCarte(carte)
+    async retenirCartesHumains(posCarte1, posCarte2){
+        // On récupère les indexs des cartes
+        let index1 = this.getMonMemory().retournerIndexParPosition(posCarte1)
+        let index2 = this.getMonMemory().retournerIndexParPosition(posCarte2)
+
+        // On récupère les cartes elle memes
+        let carte1 = this.getMonMemory().getMesCartes()[index1]
+        let carte2 = this.getMonMemory().getMesCartes()[index2]
+
+        if(!carte1.equals(carte2)){
+            // L'index de la carte en position carte2
+            let index = this.getMonMemory().retournerIndexParPosition(posCarte2)
+            // On récupère la carte en position carte2
+            let carte = this.getMonMemory().getMesCartes()[index]
+            // On place la carte dans notre mémoire
+            this.retenirUneCarte(carte)
+        }
+        else{
+            await this.retirerUneCarte(carte1)
+            await this.retirerUneCarte(carte2)
+
+        }
+
+        await this.afficherMemoire()
     }
 
     choixUneCarte(){
         // On récupère la liste des positions possibles
         let listePositions = localStorage.getItem("lesPositions")
+
+        // On transforme la liste des positions possibles en un tableau
+        let tableauPositions = listePositions.split(',')
 
         // On récupère la liste des positions des cartes que l'on connait
         let listeCartes = []
@@ -46,20 +66,20 @@ export class MachineMoyen extends JoueurMachine{
             // On place la position dans listeCartes
             listeCartes.push(this.getMemoire()[i].getPosition())
         }
-
+        
         // On créé une liste des positions que l'on ne connait pas
         let listeNonConnues = []
         // Pour chaque position de listePositions
-        for(i = 0; i < listePositions.length; i++){
+        for(let i = 0; i < tableauPositions.length; i++){
             // Si les positions des cartes de la mémoire de contiennent pas la position i
-            if(!(listeCartes.includes(listePositions[i]))){
+            if(!(listeCartes.includes(tableauPositions[i]))){
                 // Alors on rajoute la position à la liste des positions que l'on ne connait pas
-                listeNonConnues.push(listePositions[i])
+                listeNonConnues.push(tableauPositions[i])
             }
         }
 
         // On récupère une valeur aléatoire entre 0 et la taille de la liste des positions que l'on ne connait pas
-        let index = ~~(Math.random() * listeNonConnues.length)
+        let index = ~~(Math.random() * (listeNonConnues.length - 1))
 
         // On récupère la position a cet index
         let position = listeNonConnues[index]
@@ -74,6 +94,21 @@ export class MachineMoyen extends JoueurMachine{
             // La position est placée dans Coup2
             localStorage.setItem("Coup2", position)
         }
+
+        // On récupère l'index de la position dans le memory
+        index = this.getMonMemory().retournerIndexParPosition(position)
+        
+        // On retourne la carte
+        this.getMonMemory().getMesCartes()[index].retournerCarte()
+
+        // On récupère la carte
+        let carte = this.getMonMemory().getMesCartes()[index]
+        // On place la carte dans notre mémoire
+        this.retenirUneCarte(carte)
+
+        localStorage.setItem('memoryMoyen', this.getMemoire())
+
+        return Promise.resolve
     }
 
 

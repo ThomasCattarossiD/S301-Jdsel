@@ -1,7 +1,7 @@
 /*
  Code : Classe JoueurHumain
  But :  La classe permettant à un joueur humain de jouer au jeu du Memory
- Date de dernière modification : 28 Décembre 2022
+ Date de dernière modification : 17 Janvier 2023
  Auteur : D. Lanusse
  Remarques : Code conforme aux spécification internes données en cours
 */
@@ -60,11 +60,14 @@ export class JoueurHumain extends Joueur{
             // On récupère la liste des positions valables
             let listePositions = localStorage.getItem('lesPositions')
 
+            // On passe cette liste en tableau
+            let tableau = listePositions.split(',')
+
             // On récupère le choix du joueur quant à la position de la carte qu'il joue
             let leChoixUn = document.getElementById('leCoup').value
 
             // Si la liste des positions valables contient le texte saisi (s'il n'y a pas de problème de saisi comme AK)
-            if(listePositions.includes(leChoixUn)){
+            if(tableau.includes(leChoixUn)){
                 // La carte est valable et on modifie carteValable
                 carteValable = true
 
@@ -103,11 +106,14 @@ export class JoueurHumain extends Joueur{
             // On récupère la liste des positions valables
             let listePositions = localStorage.getItem('lesPositions')
 
+            // On passe cette liste en tableau
+            let tableau = listePositions.split(',')
+
             // On récupère le choix du joueur
             let leChoixDeux = document.getElementById('leCoup').value
 
             // Si la liste des positions valable contient le choix du joueur
-            if(listePositions.includes(leChoixDeux) && localStorage.getItem("Coup1") != leChoixDeux){
+            if(tableau.includes(leChoixDeux) && localStorage.getItem("Coup1") != leChoixDeux){
                 // La carte est valable et on modifie carteValable
                 carteValable = true
 

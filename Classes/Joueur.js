@@ -1,14 +1,13 @@
 /*
  Code : Classe Abstraite Joueur
  But :  Une classe abstraite contenant des attributs et fonctions partagés par tous les joueurs. Certaines fonctions sont à redéfinir dans les classes filles
- Date de dernière modification : 28 Décembre 2022
+ Date de dernière modification : 17 janvier 2023
  Auteur : D. Lanusse
  Remarques : Code conforme aux spécification internes données en cours
 */
 
 // On inclue la classe Memory
 import {Memory} from "./Memory.js"
-import {JoueurMachine} from "./typeJoueurs/joueurMachine.js"
 
 // On créé la classe Joueur
 export class Joueur {
@@ -23,9 +22,6 @@ export class Joueur {
         // Si le constructeur appelé est celui de la classe abstraite Joueur on renvoie une Erreur
         if(this.constructor === Joueur){
             throw new TypeError('Classe abstraite "Joueur" ne peut pas être instanciée directement')
-        }
-        else if(this.constructor === JoueurMachine){
-            throw new TypeError('Classe abstraite "JoueurMachine" ne peut pas être instanciée directement')
         }
         // Sinon on continue
 

@@ -9,43 +9,54 @@
         <article id="lesScores">
 
         </article>
-        <article class="grilleJeu" id="laGrilleDeJeu">
+        <section class="partieJeu">
+            <article class="grilleJeu" id="laGrilleDeJeu">
 
-        </article>
+            </article>
+            <section class="afficherCoups">
+                <h5>Coup 1 :</h5>
+                <p id="affichageCoup1"></p>
+                <br/>
+                <h5>Coup 2 :</h5>
+                <p id="affichageCoup2"></p>
+            </section>
+            <article class="grilleJeu" id="grilleMemoire">
+                
+            </article>
+        </section>
         <article>
             <p>Saisissez les coordonnées (AA) de la carte que vous souhaitez jouer</p>
             <h5 id="affichage"></h5>
             <input type="text" id="leCoup">
             <button type="button" id="leBoutonValider" disabled>Valider</button>
         </article>
-        <button action="formulaireDifficulteBot.html">Retour au formulaire</button>
+        <a href="formulaireDifficulteBot.html"><button>Retour au formulaire</button></a>
         <script type="module">
             if(localStorage.getItem('nivMachine') === null){
                 window.location.replace("formulaireDifficulteBot.html")
             }
             import {Memory} from "./Classes/Memory.js";
-            import {JoueurHumain} from "./Classes/typeJoueurs/joueurHumain.js"
-            
+            import {JoueurHumain} from "./Classes/typeJoueurs/joueurHumain.js";
+            import {MachineFacile} from "./Classes/typeJoueurs/typeMachines/machineFacile.js";
+            import {MachineMoyen} from "./Classes/typeJoueurs/typeMachines/machineMoyen.js";
+            import {MachineDifficile} from "./Classes/typeJoueurs/typeMachines/machineDifficile.js";
             let leMemory = new Memory();
-            let unJoueur = new JoueurHumain("J1");
+            let unJoueur = new JoueurHumain(localStorage.getItem("PseudoJ1"));
             unJoueur.lierMonMemory(leMemory);
             let typeJoueur = localStorage.getItem('nivMachine');
             let deuxJoueur 
             switch(typeJoueur){
                 case "none":
-                    deuxJoueur = new JoueurHumain("J2");
+                    deuxJoueur = new JoueurHumain(localStorage.getItem("PseudoJ2"));
                     break;
                 case "Facile":
-                    window.alert("La machine est de niveau Facile");
-                    deuxJoueur = new JoueurHumain("J2");
+                    deuxJoueur = new MachineFacile(localStorage.getItem("PseudoJ2"));
                     break;
                 case "Moyen":
-                    window.alert("La machine est de niveau Moyen");
-                    deuxJoueur = new JoueurHumain("J2");
+                    deuxJoueur = new MachineMoyen(localStorage.getItem("PseudoJ2"));
                     break;
                 case "Difficile":
-                    window.alert("La machine est de niveau Difficile");
-                    deuxJoueur = new JoueurHumain("J2");
+                    deuxJoueur = new MachineDifficile(localStorage.getItem("PseudoJ2"));
                     break;
             }
             deuxJoueur.lierMonMemory(leMemory);

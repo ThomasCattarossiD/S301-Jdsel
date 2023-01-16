@@ -1,7 +1,7 @@
 /*
  Code : Classe Memory
  But :  Permettre à un utilisateur de jouer au jeu du Memory contre un autre utilisateur local ou un ordinateur
- Date de dernière modification : 28 Décembre 2022
+ Date de dernière modification : 17 janvier 2023
  Auteur : D. Lanusse
  Remarques : Code conforme aux spécification internes données en cours
 */
@@ -243,7 +243,6 @@ export class Memory{
                 if(this.#mesCartes.length == 0){
                     break;
                 }
-
                 // Si le joueur a fini de jouer alors il a joué une paire, pour que le prochain puisse jouer on remodifie le stockage local
                 localStorage.setItem('paireJouee', 'no')
             }
@@ -315,7 +314,8 @@ export class Memory{
 
     // Cette fonction permet la vérification du coup d'un Joueur que l'on connait par son pseudonyme
     async unJoueurAJoue(pseudonyme){
-        
+        this.afficherJeu()
+
         // On récupère les indexs des coups du joueur
         let coup1 = localStorage.getItem("Coup1")
         let coup2 = localStorage.getItem("Coup2")
@@ -351,19 +351,13 @@ export class Memory{
             localStorage.setItem('paireTrouvee', 'no')
         }
 
-        // On attend un certain temps avant de continuer
-        await this.sommeilAffichage()
+        // On attend trois secondes avant de poursuivre l'exécution
+        await new Promise(r => setTimeout(r, 3000))
+        await this.afficherJeu()
+
         // On indique que le joueur a tout de même joué une paire de cartes
         localStorage.setItem('paireJouee', 'yes')
 
-        // On dit à Javascript qu'il peut reprendre son déroulement normal
-        return Promise.resolve()
-    }
-
-    // Une fonction pour attendre un certain temps avant que le jeu ne reprenne permettant la lecture des cartes retournées
-    sommeilAffichage(){
-        // On attend 3 secondes
-        setTimeout(() => {this.afficherJeu()}, 3000)
         // On dit à Javascript qu'il peut reprendre son déroulement normal
         return Promise.resolve()
     }

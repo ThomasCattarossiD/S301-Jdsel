@@ -77,15 +77,23 @@
                     
                 }
             }
+
+            function ajouterPrenoms(){
+                let input1 = document.getElementById("Joueur1");
+                localStorage.setItem("PseudoJ1", input1.value);
+                let input2 = document.getElementById("Joueur2");
+                localStorage.setItem("PseudoJ2", input2.value);
+
+            }
         </script>
     </head>
     <body>
         <article>
             <article>
-                <h3>Joueur1 : </h3><input type="text" placeholder="Joueur1" name="nomJoueur1">
+                <h3>Joueur1 : </h3><input type="text" name="nomJoueur1" id="Joueur1" value="Joueur1">
             </article>
             <article>
-                <h3>Joueur2 : </h3><input type="text" placeholder="Joueur2" name="nomJoueur2">
+                <h3>Joueur2 : </h3><input type="text" name="nomJoueur2" id="Joueur2" value="Joueur2">
                 <br/>
                 <h4>Joueur2 Machine :</h4><input type="checkbox" id="estMachine" class="checkBoxButton" name="estMachine">
             </article>
@@ -95,7 +103,7 @@
         <a href="Fichiers-php/niveauMachine.php" id="lienMain"></a>
         <script type="text/javascript">
             setInterval(afficherFormulaire, 1000)
-            
+            setInterval(ajouterPrenoms, 1000)
         </script>
     </body>
 </html>

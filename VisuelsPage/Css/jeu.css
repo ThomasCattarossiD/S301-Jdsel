@@ -6,8 +6,10 @@
 
 .grilleJeu {
     display: grid;
+    width : 300px;
     grid-template-columns: 50px 50px 50px 50px 50px 50px;
     grid-template-rows: 75px 75px 75px 75px 75px 75px;
+    margin-right: 20%;
 }
 
 .unA {
@@ -68,4 +70,14 @@
 
 .tourne {
     border: 2px solid blue;
+}
+
+.partieJeu{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-flow: column;
+}
+
+.afficherCoups {
+    margin-right: 20%;
 }

@@ -1,7 +1,7 @@
 /*
  Code : Classe Carte
  But : Avoir des cartes modifiables en direct dans le jeu du Memory
- Date de dernière modification : 28 Décembre 2022
+ Date de dernière modification : 17 Janvier 2023
  Auteur : D. Lanusse
  Remarques : Code conforme aux spécification internes données en cours
 */
@@ -109,13 +109,30 @@ export class Carte{
         // Si la estRetournee est vrai, il devient faux
         if(this.#estRetournee){
             this.#estRetournee = false
-            return this.#estRetournee
         }
         // Sinon il devient vrai
         else{
             this.#estRetournee = true
-            return this.#estRetournee
         }
+    }
+
+    // On affiche cette Carte dans la mémoire du robot
+    afficherPosition(){
+        // On créé une liste contenant les deux lettres de positionnement de la carte
+        let liste = this.#positionCarte.split('')
+        // On créé un élément appelé laCarte
+        let laCarte = document.createElement("p")
+        // L'élément laCarte a trois classes, la première correspond à sa ligne, la deuxième sa colonne, et la troisième indique qu'il s'agit d'une carte
+        laCarte.className = "un" + liste[0] + " deux" + liste[1] + " carte"
+
+        laCarte.textContent = this.getValeur()
+        
+        // On récupère la grille d'affichage des cartes
+        let grille = document.getElementById('grilleMemoire')
+
+        // On lui ajoute comme enfant laCarte
+        grille.appendChild(laCarte)
+        
     }
 
 }
