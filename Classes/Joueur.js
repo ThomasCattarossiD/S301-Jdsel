@@ -8,6 +8,7 @@
 
 // On inclue la classe Memory
 import {Memory} from "./Memory.js"
+import {JoueurMachine} from "./typeJoueurs/joueurMachine.js"
 
 // On créé la classe Joueur
 export class Joueur {
@@ -23,6 +24,7 @@ export class Joueur {
         if(this.constructor === Joueur){
             throw new TypeError('Classe abstraite "Joueur" ne peut pas être instanciée directement')
         }
+        else if(this.constructor === JoueurMachine)
         // Sinon on continue
 
         // On définit le pseudo et le score
