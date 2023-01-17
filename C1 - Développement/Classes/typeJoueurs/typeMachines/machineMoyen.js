@@ -20,7 +20,7 @@ export class MachineMoyen extends JoueurMachine{
     constructor(pseudonyme){
         super(pseudonyme)
 
-        this.setCapaMem(12)
+        this.setCapaMem(6)
         this.setProbaOubli(0.5)
         this.setDifficulte(2)
     }
