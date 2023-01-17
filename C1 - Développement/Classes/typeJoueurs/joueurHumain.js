@@ -13,8 +13,6 @@ import { Joueur } from "../Joueur.js"
 export class JoueurHumain extends Joueur{
 
     // ATTRIBUTS 
-    #cleCoup1 = 'Coup1'
-    #cleCoup2 = 'Coup2'
 
     // CONSTRUCTEUR -Pas besoin, déjà défini dans la classe mère-
 
@@ -42,8 +40,8 @@ export class JoueurHumain extends Joueur{
 
         // TRAITEMENTS
         // On déclare que les emplacement du stockage local pour les deux clés ont pour valeur empty
-        localStorage.setItem(this.#cleCoup1, 'empty')
-        localStorage.setItem(this.#cleCoup2, 'empty')
+        localStorage.setItem("Coup1", 'empty')
+        localStorage.setItem("Coup2", 'empty')
 
         // On récupère le bouton puis on l'active
         let bouton = document.getElementById('leBoutonValider')

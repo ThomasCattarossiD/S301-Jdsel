@@ -47,6 +47,18 @@ export class Memory{
         this.#mesCartes = listeCartes
     }
 
+    //   >> getNbCartes() >> nbCartes
+    getNbCartes(){
+        return this.#nbCartes
+    }
+    // unEntier >> setNbCartes() >> 
+    setNbCartes(unEntier){
+        if((unEntier % 2) != 0){
+            throw new Error("Le nombre de cartes doit être pair")
+        } 
+        this.#nbCartes = unEntier
+    }
+
     // MÉTHODES SPÉCIFIQUES
     // On ajoute un joueur à la liste mesJoueurs
     ajouterJoueur(unJoueur){
