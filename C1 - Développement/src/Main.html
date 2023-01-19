@@ -10,27 +10,37 @@
 
         </article>
         <section class="partieJeu">
-            <article class="grilleJeu" id="laGrilleDeJeu">
+            <div class="laGrilleJeu">
+                <h4>Les cartes en Jeu</h4>
+                <article class="grilleJeu" id="laGrilleDeJeu">
 
-            </article>
+                </article>
+            </div>
             <section class="afficherCoups">
-                <h5>Coup 1 :</h5>
-                <p id="affichageCoup1"></p>
-                <br/>
-                <h5>Coup 2 :</h5>
-                <p id="affichageCoup2"></p>
+                <article>
+                    <h4>Coup 1 :</h4>
+                    <p id="affichageCoup1"></p>
+                </article>
+                <article></article>
+                    <h4>Coup 2 :</h4>
+                    <p id="affichageCoup2"></p>
+                </article>
             </section>
-            <article class="grilleJeu" id="grilleMemoire">
-                
-            </article>
+            <div class="laGrilleMemoire">
+                <h4>La valeur des cartes connues par la machine</h4>
+                <article class="grilleMemoire" id="grilleMemoire">
+                    
+                </article>
+            </div>
         </section>
-        <article>
-            <p>Saisissez les coordonnées (AA) de la carte que vous souhaitez jouer</p>
-            <h5 id="affichage"></h5>
-            <input type="text" id="leCoup">
-            <button type="button" id="leBoutonValider" disabled>Valider</button>
+        <article class="partieSaisie">
+            <p class="elementSaisie">Saisissez les coordonnées (AA) de la carte que vous souhaitez jouer</p>
+            <h4 id="affichage" class="elementSaisie"></h4>
+            <input type="text" id="leCoup" class="elementSaisie">
+            <br>
+            <button type="button" id="leBoutonValider" disabled class="elementSaisie">Valider</button>
         </article>
-        <a href="formulaireDifficulteBot.html"><button>Retour au formulaire</button></a>
+        <a href="formulaireDifficulteBot.html"><button type="button">Retour au formulaire</button></a>
         <script type="module">
             if(localStorage.getItem('nivMachine') === null){
                 window.location.replace("formulaireDifficulteBot.html")

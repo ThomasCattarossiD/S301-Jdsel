@@ -13,8 +13,11 @@ body {
 }
 
 article {
-    border: 2.5px solid lightcyan;
     padding: 2.5%;
+}
+
+.bordure {
+    border: 2.5px solid lightcyan;
 }
 
 form {
@@ -23,7 +26,7 @@ form {
     margin-right: 25%;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto;
     grid-auto-flow: row;
 }
 
@@ -31,7 +34,7 @@ button {
     background-color: steelblue;
     border-color: royalblue;
     border-radius: 12px;
-    height: 45px;
+    padding: 5px;
     font-size: medium;
     color: lightcyan;
 }
@@ -44,9 +47,12 @@ button {
     }
 
     article {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .bordure {
         border: 5px solid lightcyan;
-        margin-left: 25%;
-        margin-right: 25%;
     }
 
     form {
@@ -56,11 +62,18 @@ button {
 
     button {
         border-radius: 12px;
-        height: 15%;
         font-size: medium;
     }
 
     form > button {
         height : auto;
+    }
+
+    a > button {
+        width: 10%;
+    }
+
+    h4 {
+        margin-top: 5px;
     }
 }

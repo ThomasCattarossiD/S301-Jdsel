@@ -70,6 +70,7 @@
                         // On créé le bouton de validation
                         bouton = document.createElement("button")
                         bouton.innerText= "Continuer"
+                        bouton.type = "button"
 
                         // On place le bouton dans le lien
                         lien.appendChild(bouton)
@@ -88,14 +89,14 @@
         </script>
     </head>
     <body>
-        <article>
+        <article class="bordure">
             <article>
                 <h3>Joueur1 : </h3><input type="text" name="nomJoueur1" id="Joueur1" value="Joueur1">
             </article>
             <article>
                 <h3>Joueur2 : </h3><input type="text" name="nomJoueur2" id="Joueur2" value="Joueur2">
                 <br/>
-                <h4>Joueur2 Machine :</h4><input type="checkbox" id="estMachine" class="checkBoxButton" name="estMachine">
+                <h4>Joueur2 Machine : <input type="checkbox" id="estMachine" class="checkBoxButton" name="estMachine"></h4>
             </article>
         </article>
         <article id="formNiveau">
