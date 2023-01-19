@@ -3,9 +3,9 @@
     header("Refresh:0.1; url=../Main.html");
 
     // Si on connait le niveau de la machine
-    if(isset($_POST['nivMachine'])){
+    if(isset($_POST['lvlMachine'])){
         // On récupère le niveau de la machine
-        $niveauMachine = $_POST['nivMachine'];
+        $niveauMachine = $_POST['lvlMachine'];
 
         // On place le niveau de la machine dans une variable locale javascript
         print "<script type='text/javascript'>localStorage.setItem('nivMachine', '$niveauMachine')</script>";
