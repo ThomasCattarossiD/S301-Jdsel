@@ -7,14 +7,14 @@
         <script type="text/javascript">
             function afficherFormulaire() {
                 // On récupère l'identifiant du bouton radio
-                let boutonRadio = document.getElementById('estMachine')
+                let caseACocher = document.getElementById('estMachine')
                 // On récupère l'article contenant le formulaire des niveaux de la machine
                 let articleForm = document.getElementById('formNiveau')
                 // On récupère le lien qui permet d'orienter directement vers la page main.html
-                lien = document.getElementById('lienMain')
+                let lien = document.getElementById('lienMain')
 
                 // Si le bouton est appuyé on affiche le formulaire 
-                if(boutonRadio.checked){
+                if(caseACocher.checked){
                     if(lien.innerHTML != ""){
                         // On enlève le bouton dans le lien
                         lien.innerHTML = ""
@@ -30,7 +30,7 @@
 
                         // On créé la liste déroulante des niveaux 
                         listeDeroulante = document.createElement("select")
-                        listeDeroulante.name = "nivMachine"
+                        listeDeroulante.name = "lvlMachine"
 
                         // On créé les options pour la liste déroulantes et on les ajoute
                         libelle = document.createElement("label")
@@ -70,6 +70,7 @@
                         // On créé le bouton de validation
                         bouton = document.createElement("button")
                         bouton.innerText= "Continuer"
+                        bouton.type = "button"
 
                         // On place le bouton dans le lien
                         lien.appendChild(bouton)
@@ -88,14 +89,14 @@
         </script>
     </head>
     <body>
-        <article>
+        <article class="bordure">
             <article>
                 <h3>Joueur1 : </h3><input type="text" name="nomJoueur1" id="Joueur1" value="Joueur1">
             </article>
             <article>
                 <h3>Joueur2 : </h3><input type="text" name="nomJoueur2" id="Joueur2" value="Joueur2">
                 <br/>
-                <h4>Joueur2 Machine :</h4><input type="checkbox" id="estMachine" class="checkBoxButton" name="estMachine">
+                <h4>Joueur2 Machine : <input type="checkbox" id="estMachine" class="checkBoxButton" name="estMachine"></h4>
             </article>
         </article>
         <article id="formNiveau">

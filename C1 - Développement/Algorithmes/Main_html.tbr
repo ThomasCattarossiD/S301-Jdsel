@@ -1,0 +1,267 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>Main.html</nom>
+  <date_creation>19/1/2023 12:05</date_creation>
+  <Elements>
+    <Action>
+      <Position>292;82</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>nivMachine, pseudoJ1,
+pseudoJ2</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>Main</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>172;227</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>nivMachine, pseudoJ1,
+pseudoJ2</PreAssertion>
+          <PostAssertion>leMemory</PostAssertion>
+          <Titre>Initialisation Jeu</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>1;356</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>nivMachine</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Vérification du niveau 
+de la machine</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants>
+                <Condition>
+                  <Position>120.5;463</Position>
+                  <StyleLien>1</StyleLien>
+                  <estUnique>0</estUnique>
+                  <operationsLogiques>
+                    <operation>
+                      <Titre>nivMachine = NULL</Titre>
+                      <Enfants>
+                        <Action>
+                          <Position>8;581</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>?</PostAssertion>
+                          <Titre>Se diriger vers 
+formulaireDifficulteBot.html</Titre>
+                          <DetailsVisible>0</DetailsVisible>
+                          <DetailsVideVisible>1</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                        <Sortie>
+                          <Position>277;590</Position>
+                        </Sortie>
+                      </Enfants>
+                    </operation>
+                  </operationsLogiques>
+                </Condition>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>438;357</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>pseudoJ1</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Création jeu et 
+premier joueur</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>377;461</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>leMemory← Memory()</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Action>
+                  <Position>591;458</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>Création premier joueur
+et liaison</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants>
+                    <Action>
+                      <Position>607;576</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>unJoueur.lierMonMemory(
+unJoueur)</Titre>
+                      <DetailsVisible>0</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                    <Action>
+                      <Position>396;579</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>unJoueur←
+JoueurHumain(pseudoJ1)</Titre>
+                      <DetailsVisible>0</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </Action>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>916;352</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>nivMachine,
+pseudoJ2,
+leMemory</PreAssertion>
+              <PostAssertion>leMemory</PostAssertion>
+              <Titre>Création du deuxième 
+joueur</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>888;457</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>nivMachine,
+pseudoJ2</PreAssertion>
+                  <PostAssertion>deuxJoueur</PostAssertion>
+                  <Titre>Initialisation du Joueur</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants>
+                    <ConditionMultiple>
+                      <Position>941.5;579</Position>
+                      <StyleLien>0</StyleLien>
+                      <Titre>nivMachine</Titre>
+                      <operationsLogiques>
+                        <operation>
+                          <Titre>"none"</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>748;725</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>deuxJoueur←
+JoueurHumain(pseudoJ2)</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>"Facile"</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>872;811</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>deuxJoueur←
+MachineFacile(pseudoJ2)</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>"Moyen"</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>1073;812</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>deuxJoueur←
+MachineMoyen(pseudoJ2)</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>"Difficile"</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>1181;720</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>deuxJoueur←
+MachineDifficile(pseudoJ2)</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                      </operationsLogiques>
+                    </ConditionMultiple>
+                  </Enfants>
+                </Action>
+                <Action>
+                  <Position>1381;458</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>deuxJoueur,
+leMemory</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>Liaison au Memory</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants>
+                    <Action>
+                      <Position>1479;577</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>deuxJoueur.lierMonMemory(
+leMemory)</Titre>
+                      <DetailsVisible>0</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </Action>
+              </Enfants>
+            </Action>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>1610;216</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>leMemory</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>Jouer et finir jeu</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>1705;349</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>leMemory.jouerJeu()</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Action>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>

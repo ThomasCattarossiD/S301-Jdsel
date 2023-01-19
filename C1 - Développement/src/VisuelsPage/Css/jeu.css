@@ -5,11 +5,21 @@
 }
 
 .grilleJeu {
+    margin-top: 5px;
     display: grid;
     width : 300px;
     grid-template-columns: 50px 50px 50px 50px 50px 50px;
     grid-template-rows: 75px 75px 75px 75px 75px 75px;
-    margin-right: 20%;
+    border: 2px solid black;
+}
+
+.grilleMemoire {
+    margin-top: 5px;
+    display: grid;
+    width : 300px;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 75px 75px 75px 75px 75px 75px;
+    border: 2px solid black;
 }
 
 .unA {
@@ -74,10 +84,48 @@
 
 .partieJeu{
     display: grid;
-    grid-template-columns: auto auto;
-    grid-auto-flow: column;
+    grid-template-columns: auto auto auto;
+    grid-auto-flow: auto;
 }
 
 .afficherCoups {
     margin-right: 20%;
+}
+
+body {
+    margin-top: 2.5%;
+    text-align: center;
+}
+
+#lesScores {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.partieJeu {
+    margin-top: 5%;
+}
+
+.afficherCoups {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+
+.laGrilleJeu {
+    text-align: left;
+    margin-left: 50%;
+}
+
+.laGrilleMemoire {
+    text-align: left;
+}
+
+.partieSaisie {
+    margin-top: 2.5%;
+    margin-bottom: 2%;
+}
+
+.elementSaisie {
+    margin: 15px;
 }
