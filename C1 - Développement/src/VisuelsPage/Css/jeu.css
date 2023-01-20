@@ -83,8 +83,9 @@
 }
 
 .partieJeu{
+    margin-top: 5px;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 40% 20% 40%;
     grid-auto-flow: auto;
 }
 
@@ -102,10 +103,6 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
-.partieJeu {
-    margin-top: 5%;
-}
-
 .afficherCoups {
     display: grid;
     grid-template-columns: auto auto;
@@ -114,7 +111,7 @@ body {
 
 .laGrilleJeu {
     text-align: left;
-    margin-left: 50%;
+    margin-left: 35%;
 }
 
 .laGrilleMemoire {
@@ -123,9 +120,9 @@ body {
 
 .partieSaisie {
     margin-top: 2.5%;
-    margin-bottom: 2%;
+    margin-bottom: 5px;
 }
 
 .elementSaisie {
-    margin: 15px;
+    margin: 5px;
 }
