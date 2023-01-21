@@ -334,7 +334,7 @@ export class Memory{
         // On dit à tous les joueurs sauf celui qui vient de jouer que l'un d'entre eux à joué
         for(let i = 0; i < this.#mesJoueurs.length; i++){
             if(this.#mesJoueurs[i].getPseudo() != pseudonyme){
-                this.#mesJoueurs[i].retenirCartesHumains(localStorage.getItem("Coup1"), localStorage.getItem("Coup2"))
+                this.#mesJoueurs[i].retenirCartesHumains(coup1, coup2)
             }
         }
         // Si les cartes ont les mêmes valeurs
