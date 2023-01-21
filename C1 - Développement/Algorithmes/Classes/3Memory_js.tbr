@@ -1,0 +1,547 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>Memory_js</nom>
+  <date_creation>21/1/2023 11:37</date_creation>
+  <Elements>
+    <Action>
+      <Position>1054;84</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>Memory.afficherJeu()</Titre>
+      <DetailsVisible>0</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>838;219</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>On récupère les éléments d'affichages et on les vide</Titre>
+          <DetailsVisible>0</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>561;324</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>On vide les scores</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>396;433</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>mesScores ← document.
+getElementById('lesScores')</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Action>
+                  <Position>633;434</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>mesScores.innerHtml
+←""</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>883;329</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>On vide l'affichage des cartes</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>818;432</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>maGrille ← document.
+getElementById('laGrilleDeJeu')</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Action>
+                  <Position>1035;432</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>maGrille.innerHtml←""</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </Action>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>1394;220</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>On lance les affichages</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>1321;327</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Afficher les scores</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants>
+                <Iteration>
+                  <Position>1378.5;421.5</Position>
+                  <StyleLien>1</StyleLien>
+                  <Titre>pour tout element dans
+this.getMesJoueurs()</Titre>
+                  <IterationFixe>1</IterationFixe>
+                  <Enfants>
+                    <Action>
+                      <Position>1310;522</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>element.
+afficherScoreJoueur()</Titre>
+                      <DetailsVisible>0</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </Iteration>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>1654;326</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Afficher les cartes</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants>
+                <Iteration>
+                  <Position>1705.5;427.5</Position>
+                  <StyleLien>1</StyleLien>
+                  <Titre>pour tout element dans
+this.getMesCartes()</Titre>
+                  <IterationFixe>1</IterationFixe>
+                  <Enfants>
+                    <Action>
+                      <Position>1660;528</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>element.
+afficherCarte()</Titre>
+                      <DetailsVisible>0</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </Iteration>
+              </Enfants>
+            </Action>
+          </Enfants>
+        </Action>
+      </Enfants>
+    </Action>
+    <Action>
+      <Position>1114;648</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>Memory.unJoueurAJoue(
+pseudonyme)</Titre>
+      <DetailsVisible>0</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>126;757</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>coup1, coup2, i, indice</PostAssertion>
+          <Titre>Initialisation des variables</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>-7;882</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>coup1 ← SL.getItem("Coup1")</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>201;881</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>coup2 ← SL.getItem("Coup2")</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>406;880</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>i ← entier</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>493;880</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>indice ← entier</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>1074;749</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>coup1, coup2, i, indice, pseudonyme</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>Traitements</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>646;886</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>On affiche le jeu</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>642;993</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>this.afficherJeu()</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>793;885</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>pseudonyme, coup1, coup2, i</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>On annonce aux joueurs que l'un d'entre eux a joué</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants>
+                <Iteration>
+                  <Position>1065.5;996.5</Position>
+                  <StyleLien>1</StyleLien>
+                  <Titre>i allant de 0 à 
+this.mesJoueurs.length</Titre>
+                  <IterationFixe>1</IterationFixe>
+                  <Enfants>
+                    <Condition>
+                      <Position>991.5;1091</Position>
+                      <StyleLien>0</StyleLien>
+                      <estUnique>0</estUnique>
+                      <operationsLogiques>
+                        <operation>
+                          <Titre>this.mesJoueurs[i].
+getPseudo()!= pseudonyme</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>979;1189</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>this.mesJoueurs[i].retenir
+CartesHumains(coup1, coup2)</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                      </operationsLogiques>
+                    </Condition>
+                  </Enfants>
+                </Iteration>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>1201;886</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>coup1, coup2, indice, pseudonyme</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>On vérifie si les deux 
+cartes sont une paire</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants>
+                <Condition>
+                  <Position>1343.5;994</Position>
+                  <StyleLien>1</StyleLien>
+                  <estUnique>0</estUnique>
+                  <operationsLogiques>
+                    <operation>
+                      <Titre>Les cartes sont égales</Titre>
+                      <Enfants>
+                        <Action>
+                          <Position>1218;1181</Position>
+                          <StyleLien>2</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>?</PostAssertion>
+                          <Titre>On gère le cas où les cartes sont égales</Titre>
+                          <DetailsVisible>0</DetailsVisible>
+                          <DetailsVideVisible>1</DetailsVideVisible>
+                          <Enfants>
+                            <Action>
+                              <Position>864;1319</Position>
+                              <StyleLien>2</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>On retire les 
+cartes du jeu</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants>
+                                <Action>
+                                  <Position>739;1416</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>?</PreAssertion>
+                                  <PostAssertion>?</PostAssertion>
+                                  <Titre>this.retirerCarte(coup1)</Titre>
+                                  <DetailsVisible>0</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                                <Action>
+                                  <Position>921;1418</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>?</PreAssertion>
+                                  <PostAssertion>?</PostAssertion>
+                                  <Titre>this.retirerCarte(coup2)</Titre>
+                                  <DetailsVisible>0</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                              </Enfants>
+                            </Action>
+                            <Action>
+                              <Position>1158;1324</Position>
+                              <StyleLien>2</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>On récupère l'indice 
+du joueur</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants>
+                                <Action>
+                                  <Position>1130;1420</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>?</PreAssertion>
+                                  <PostAssertion>?</PostAssertion>
+                                  <Titre>indice ← this.retournerIndex
+PasPseudonyme(pseudonyme)</Titre>
+                                  <DetailsVisible>0</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                              </Enfants>
+                            </Action>
+                            <Action>
+                              <Position>1382;1325</Position>
+                              <StyleLien>2</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>On incrémente le 
+score du joueur</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants>
+                                <Action>
+                                  <Position>1359;1419</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>?</PreAssertion>
+                                  <PostAssertion>?</PostAssertion>
+                                  <Titre>this.mesJoueurs[indice].
+setScore()</Titre>
+                                  <DetailsVisible>0</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                              </Enfants>
+                            </Action>
+                            <Action>
+                              <Position>1579;1325</Position>
+                              <StyleLien>2</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>On indique que le joueur 
+a trouvé une paire</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants>
+                                <Action>
+                                  <Position>1571;1420</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>?</PreAssertion>
+                                  <PostAssertion>?</PostAssertion>
+                                  <Titre>SL.setItem('paireTrouvee', 
+'yes')</Titre>
+                                  <DetailsVisible>0</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                              </Enfants>
+                            </Action>
+                          </Enfants>
+                        </Action>
+                      </Enfants>
+                    </operation>
+                    <operation>
+                      <Titre>Sinon</Titre>
+                      <Enfants>
+                        <Action>
+                          <Position>1399;1089</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>?</PostAssertion>
+                          <Titre>On retourne les 
+deux cartes</Titre>
+                          <DetailsVisible>0</DetailsVisible>
+                          <DetailsVideVisible>1</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                        <Action>
+                          <Position>1553;1090</Position>
+                          <StyleLien>2</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>?</PostAssertion>
+                          <Titre>On indique que le joueur 
+n'a pas trouvé de paire</Titre>
+                          <DetailsVisible>0</DetailsVisible>
+                          <DetailsVideVisible>1</DetailsVideVisible>
+                          <Enfants>
+                            <Action>
+                              <Position>1550;1188</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>SL.setItem('paireTrouvee', 
+'no')</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </Action>
+                      </Enfants>
+                    </operation>
+                  </operationsLogiques>
+                </Condition>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>1551;886</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>On attend 
+trois secondes</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>1665;885</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>On affiche le jeu</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>1665;985</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>this.afficherJeu()</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>1800;885</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>On indique que le joueur 
+a joué une paire</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>1800;986</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>SL.setItem('paireJouee', 
+'yes')</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </Action>
+          </Enfants>
+        </Action>
+      </Enfants>
+    </Action>
+    <Action>
+      <Position>457;626</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>Stockage Local = SL</Titre>
+      <DetailsVisible>0</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants/>
+    </Action>
+  </Elements>
+</Algorithme>

@@ -1,0 +1,662 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>Memory_js</nom>
+  <date_creation>21/1/2023 11:38</date_creation>
+  <Elements>
+    <Action>
+      <Position>911;66</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>Memory.jouerJeu()</Titre>
+      <DetailsVisible>0</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>245;176</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>indice, message,
+affichage</PostAssertion>
+          <Titre>Initialisation des 
+variables</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>315;304</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>affichage ←
+element html</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>164;304</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>message ← chaine
+de caractères</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>60;302</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>indice ← 0</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>942;182</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>indice, message, affichage</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>Traitements</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>562;305</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Définition des variables
+du stockage local (SL)</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>262;427</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>SL.setItem("EtatPartie",
+"EnCours")</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Action>
+                  <Position>464;427</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>SL.setItem(
+"paireTrouvee","yes")</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Action>
+                  <Position>641;425</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>SL.setItem(
+"paireJouee","no")</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>849;309</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>On affiche le jeu</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>850;419</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>this.afficherJeu()</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>1084;309</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>On fait jouer les 
+joueurs en boucle</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants>
+                <Iteration>
+                  <Position>1137.5;413.5</Position>
+                  <StyleLien>1</StyleLien>
+                  <Titre>?</Titre>
+                  <IterationFixe>0</IterationFixe>
+                  <Enfants>
+                    <Action>
+                      <Position>282;548</Position>
+                      <StyleLien>2</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Condition de sortie</Titre>
+                      <DetailsVisible>0</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants>
+                        <Condition>
+                          <Position>269.5;660</Position>
+                          <StyleLien>0</StyleLien>
+                          <estUnique>0</estUnique>
+                          <operationsLogiques>
+                            <operation>
+                              <Titre>this.mesCartes.length
+= 0</Titre>
+                              <Enfants>
+                                <Sortie>
+                                  <Position>356;765</Position>
+                                </Sortie>
+                              </Enfants>
+                            </operation>
+                          </operationsLogiques>
+                        </Condition>
+                      </Enfants>
+                    </Action>
+                    <Action>
+                      <Position>840;558</Position>
+                      <StyleLien>2</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>On affiche qui joue</Titre>
+                      <DetailsVisible>0</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants>
+                        <Action>
+                          <Position>537;651</Position>
+                          <StyleLien>2</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>?</PostAssertion>
+                          <Titre>On conçoit le 
+message</Titre>
+                          <DetailsVisible>0</DetailsVisible>
+                          <DetailsVideVisible>1</DetailsVideVisible>
+                          <Enfants>
+                            <Action>
+                              <Position>542;757</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>message ←</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </Action>
+                        <Action>
+                          <Position>668;653</Position>
+                          <StyleLien>2</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>?</PostAssertion>
+                          <Titre>On récupère l'élément 
+d'affichage</Titre>
+                          <DetailsVisible>0</DetailsVisible>
+                          <DetailsVideVisible>1</DetailsVideVisible>
+                          <Enfants>
+                            <Action>
+                              <Position>652;754</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>affichage ← document.
+getElementById('affichage')</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </Action>
+                        <Action>
+                          <Position>920;652</Position>
+                          <StyleLien>2</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>?</PostAssertion>
+                          <Titre>On affiche 
+le message</Titre>
+                          <DetailsVisible>0</DetailsVisible>
+                          <DetailsVideVisible>1</DetailsVideVisible>
+                          <Enfants>
+                            <Action>
+                              <Position>869;756</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>affichage.textContent←
+message</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </Action>
+                      </Enfants>
+                    </Action>
+                    <Action>
+                      <Position>1229;559</Position>
+                      <StyleLien>2</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>On fait jouer un joueur</Titre>
+                      <DetailsVisible>0</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants>
+                        <Iteration>
+                          <Position>1299.5;657.5</Position>
+                          <StyleLien>1</StyleLien>
+                          <Titre>?</Titre>
+                          <IterationFixe>0</IterationFixe>
+                          <Enfants>
+                            <Action>
+                              <Position>1067;764</Position>
+                              <StyleLien>2</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>Condition de sortie</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants>
+                                <Condition>
+                                  <Position>1049.5;857</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <estUnique>0</estUnique>
+                                  <operationsLogiques>
+                                    <operation>
+                                      <Titre>SL.getItem(
+'paireTrouvee')!='yes'</Titre>
+                                      <Enfants/>
+                                    </operation>
+                                  </operationsLogiques>
+                                </Condition>
+                              </Enfants>
+                            </Action>
+                            <Action>
+                              <Position>1283;763</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>On fait jouer un 
+tour au joueur</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                            <Action>
+                              <Position>1529;760</Position>
+                              <StyleLien>2</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>Autre condition 
+de sortie</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants>
+                                <Condition>
+                                  <Position>1502.5;854</Position>
+                                  <StyleLien>0</StyleLien>
+                                  <estUnique>0</estUnique>
+                                  <operationsLogiques>
+                                    <operation>
+                                      <Titre>this.mesCartes.length
+= 0</Titre>
+                                      <Enfants>
+                                        <Sortie>
+                                          <Position>1578;947</Position>
+                                        </Sortie>
+                                      </Enfants>
+                                    </operation>
+                                  </operationsLogiques>
+                                </Condition>
+                              </Enfants>
+                            </Action>
+                            <Action>
+                              <Position>1735;759</Position>
+                              <StyleLien>2</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>On prépare le 
+prochain tour</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants>
+                                <Action>
+                                  <Position>1705;847</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <PreAssertion>?</PreAssertion>
+                                  <PostAssertion>?</PostAssertion>
+                                  <Titre>SL.setItem('paireJouee',
+'no')</Titre>
+                                  <DetailsVisible>0</DetailsVisible>
+                                  <DetailsVideVisible>1</DetailsVideVisible>
+                                  <Enfants/>
+                                </Action>
+                              </Enfants>
+                            </Action>
+                          </Enfants>
+                        </Iteration>
+                      </Enfants>
+                    </Action>
+                    <Action>
+                      <Position>1484;556</Position>
+                      <StyleLien>2</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>On modifie l'indice
+indice</Titre>
+                      <DetailsVisible>0</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants>
+                        <Action>
+                          <Position>1466;661</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>?</PostAssertion>
+                          <Titre>indice ← (indice + 1)
+%this.mesJoueurs.length</Titre>
+                          <DetailsVisible>0</DetailsVisible>
+                          <DetailsVideVisible>1</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                      </Enfants>
+                    </Action>
+                    <Action>
+                      <Position>1708;557</Position>
+                      <StyleLien>2</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>On prépare pour le 
+prochain Joueur</Titre>
+                      <DetailsVisible>0</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants>
+                        <Action>
+                          <Position>1682;658</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>?</PostAssertion>
+                          <Titre>SL.setItem('paireTrouvee',
+'yes')</Titre>
+                          <DetailsVisible>0</DetailsVisible>
+                          <DetailsVideVisible>1</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                      </Enfants>
+                    </Action>
+                  </Enfants>
+                </Iteration>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>1337;307</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Finir le jeu</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>1328;399</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>this.finirJeu()</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </Action>
+          </Enfants>
+        </Action>
+      </Enfants>
+    </Action>
+    <Action>
+      <Position>448;39</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>Stockage Local = SL</Titre>
+      <DetailsVisible>0</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants/>
+    </Action>
+    <Action>
+      <Position>1258;849</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>this.mesJoueurs[indice].
+methodeDeJeu()</Titre>
+      <DetailsVisible>0</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants/>
+    </Action>
+    <Action>
+      <Position>851;970</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>Memory.finirJeu()</Titre>
+      <DetailsVisible>0</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>590;1064</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>egalite, score, pseudo, i</PostAssertion>
+          <Titre>Initialisation des variables</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>746;1168</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>i ← entier</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>649;1169</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>score ← 0</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>488;1171</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>pseudo ← chaine de 
+caractères</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>354;1169</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>egalite ← false</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>1118;1071</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>egalite, score, pseudo, i</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>Traitement</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>1287;1169</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>egalite, pseudo</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>On affiche le plus gros score ou l'égalité</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants>
+                <Condition>
+                  <Position>1435.5;1261</Position>
+                  <StyleLien>0</StyleLien>
+                  <estUnique>0</estUnique>
+                  <operationsLogiques>
+                    <operation>
+                      <Titre>egalite = true</Titre>
+                      <Enfants>
+                        <Action>
+                          <Position>1388;1333</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>?</PostAssertion>
+                          <Titre>Afficher l'égalité</Titre>
+                          <DetailsVisible>0</DetailsVisible>
+                          <DetailsVideVisible>1</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                      </Enfants>
+                    </operation>
+                    <operation>
+                      <Titre>Sinon</Titre>
+                      <Enfants>
+                        <Action>
+                          <Position>1565;1334</Position>
+                          <StyleLien>1</StyleLien>
+                          <PreAssertion>?</PreAssertion>
+                          <PostAssertion>?</PostAssertion>
+                          <Titre>Afficher le joueur gagnant
+et son score</Titre>
+                          <DetailsVisible>0</DetailsVisible>
+                          <DetailsVideVisible>1</DetailsVideVisible>
+                          <Enfants/>
+                        </Action>
+                      </Enfants>
+                    </operation>
+                  </operationsLogiques>
+                </Condition>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>877;1166</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>egalite, score, pseudo, i</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>On cherche le plus gros score ou l'égalité</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants>
+                <Iteration>
+                  <Position>1148.5;1260.5</Position>
+                  <StyleLien>1</StyleLien>
+                  <Titre>i allant de 0 à 
+this.mesJoueurs.length</Titre>
+                  <IterationFixe>1</IterationFixe>
+                  <Enfants>
+                    <Condition>
+                      <Position>1046.5;1347</Position>
+                      <StyleLien>1</StyleLien>
+                      <estUnique>0</estUnique>
+                      <operationsLogiques>
+                        <operation>
+                          <Titre>this.mesJoueurs[i].
+getScore() > score</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>956;1440</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>egalite ← true</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>Sinon</Titre>
+                          <Enfants>
+                            <Action>
+                              <Position>1082;1441</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>egalite ← false</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                            <Action>
+                              <Position>1214;1443</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>pseudo ← this.mesJoueurs
+[i].getPseudo()</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                            <Action>
+                              <Position>1431;1447</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>score ← this.mesJoueurs
+[i].getScore()</Titre>
+                              <DetailsVisible>0</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                      </operationsLogiques>
+                    </Condition>
+                  </Enfants>
+                </Iteration>
+              </Enfants>
+            </Action>
+          </Enfants>
+        </Action>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>
