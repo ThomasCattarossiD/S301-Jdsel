@@ -242,7 +242,7 @@ export class JoueurMachine extends Joueur{
                 localStorage.setItem("Coup2", this.#memoire[i].getPosition())
 
                 // On récupère l'index des cartes pour les retourner
-                let index1 = this.getMonMemory().retournerIndexParPosition(this.#memoire[i].getPosition())
+                let index1 = this.getMonMemory().retournerIndexParPosition(localStorage.getItem("Coup1"))
                 let index2 = this.getMonMemory().retournerIndexParPosition(this.#memoire[j].getPosition())
 
                 // On retourne les cartes
@@ -253,7 +253,7 @@ export class JoueurMachine extends Joueur{
                 await this.retirerUneCarte(this.getMonMemory().getMesCartes()[index2])
 
                 
-                await this.afficherMemoire()
+                //await this.afficherMemoire()
 
                 // On retourne qu'on a trouvé une paire
                 trouve = true
