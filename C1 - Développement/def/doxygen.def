@@ -1,0 +1,1916 @@
+AutoGen Definitions dummy;
+class = {
+  cp-id     = 'class_carte';
+  cp-name   = 'Carte';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_carte_1a802ac325b14b4ab69e94a03839917139';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'constructor';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+position
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'position';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+val
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'val';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Carte.js';
+      sec-mem-desc-line = '25';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+constructeur de la classe Carte
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param {string} position 
+@param {int} val 
+@param {bool} estRetournee
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_carte_1a7c9d68c0bb5d67a6dcb3b1c15b74276a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getPosition';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Carte.js';
+      sec-mem-desc-line = '37';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+récupérer position de la Carte
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@returns string
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_carte_1ae1b494aac35ef4af1ae63e3eeae037ec';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setPosition';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+position
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'position';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Carte.js';
+      sec-mem-desc-line = '45';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+initilaiser la position d'une Carte
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param {string} position 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_carte_1ae7a7d323652ee0bc59640009bd91f9fd';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getValeur';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Carte.js';
+      sec-mem-desc-line = '54';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+récupérer la valeur de la Carte
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@returns int
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_carte_1a735036197a4d579c9de13b2fa9133092';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setValeur';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+val
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'val';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Carte.js';
+      sec-mem-desc-line = '62';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+initilaiser la valeur d'une Carte
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param {int} val 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_carte_1a3444779a2805149e5a5019fdc34e718d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getEstRetournee';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Carte.js';
+      sec-mem-desc-line = '71';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+récupérer si la Carte est retourné ou pas
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@returns bool
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_carte_1a89caecc84eb710d4579b573749c826b8';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setEstRetournee';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+unBool
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'unBool';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Carte.js';
+      sec-mem-desc-line = '79';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+initilaiser si la Carte est retourné ou pas
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param {bool} unBool 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_carte_1a69d53c8112369ba9c125aa3b1031866e';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'toString';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Carte.js';
+      sec-mem-desc-line = '88';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+On transcrit la Carte en une chaîne de caractères compréhensibles par l'homme.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@returns string
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_carte_1ae217e93a17f089c72677fef1a0e3bd88';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'equals';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+uneCarte
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'uneCarte';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Carte.js';
+      sec-mem-desc-line = '103';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+On vérifie si cette Carte a la même valeur que uneCarte.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param {Carte} uneCarte 
+@returns bool
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_carte_1a269b3d28e319efe8769f389188c52e21';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'afficherCarte';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Carte.js';
+      sec-mem-desc-line = '120';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+On affiche cette Carte.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_carte_1a3020b9ed02a683f4f67944e50d3deabf';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'retournerCarte';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Carte.js';
+      sec-mem-desc-line = '151';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+On retourne notre carte.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_carte_1acbc34b07c82547df79fe6b48f1024f71';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'afficherPosition';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Carte.js';
+      sec-mem-desc-line = '166';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+On affiche cette Carte dans la mémoire du robot.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Carte.js';
+  cp-fileline  = '11';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Classe Carte.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'class_joueur';
+  cp-name   = 'Joueur';
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'class_joueur_humain';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'class_joueur_machine';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_1a48ccbc00d33e25ffa6c2e0665f858702';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'constructor';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+pseudonyme
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'pseudonyme';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Joueur.js';
+      sec-mem-desc-line = '24';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+constructeur de la classe Joueur
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param {string} pseudonyme 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_1ab1c2eee73ac0d6aa8d8f02a78232be42';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getPseudo';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Joueur.js';
+      sec-mem-desc-line = '42';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet d'obtenir le pseudo d'un joueur.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@returns string
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_1ab04c02ccaf719fe2f58e0ea57a017c5f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setPseudo';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+pseudonyme
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'pseudonyme';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Joueur.js';
+      sec-mem-desc-line = '50';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet de modifier le pseudo d'un joueur.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param {string} pseudonyme 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_1a179d1025266b895b5b915130920fe2a6';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getScore';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Joueur.js';
+      sec-mem-desc-line = '59';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet d'obtenir le score d'un joueur.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@returns int
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_1a891d305422b7fc32bc83c9a83bd29691';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setScore';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+newScore
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'newScore';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Joueur.js';
+      sec-mem-desc-line = '67';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet de modifier le score d'un joueur.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param {int} newScore 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_1ae5972bfc62d00d2c3c94febe324edb37';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getMonMemory';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Joueur.js';
+      sec-mem-desc-line = '76';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet d'obtenir la partie Memory où est le joueur.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@returns Memory
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_1a414d7a334fdc9b7082697f7a117e371c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'toString';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Joueur.js';
+      sec-mem-desc-line = '85';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+On transforme l'élément Joueur en une chaîne de caractères compréhensible par l'homme.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@returns string 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_1aab17050b88bcff067dd3a6efac6b96e1';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'lierMonMemory';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+unMemory
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'unMemory';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Joueur.js';
+      sec-mem-desc-line = '97';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+On lie unMemory au joueur.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param {Memory} unMemory 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_1a7c9c4b57edb7c88a2d7fb8986214ea6d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'delierMonMemory';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Joueur.js';
+      sec-mem-desc-line = '110';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+On délie unMemory du joueur.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_1abf74e87712bc910cbc2d7d18223b0c7b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+async
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'notifierCoup';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Joueur.js';
+      sec-mem-desc-line = '122';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Le joueur signale au Memory qu'il a joué son coup.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_1ac5736537ee36859f2c52be88d7a20b36';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'afficherScoreJoueur';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Joueur.js';
+      sec-mem-desc-line = '133';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+On affiche le score et le pseudo d'un joueur.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_1a556ec4fb6dbc42281a93ff97a0cc4e1c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'retenirCartesHumains';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+carte1
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'carte1';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+carte2
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'carte2';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Joueur.js';
+      sec-mem-desc-line = '150';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Cette méthode est abstraite et à définir dans les classes filles.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+On demande au joueur de retenir les cartes d'un joueur humain
+@param {Carte} carte1 
+@param {Carte} carte2 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_1a3274043fcead5b8eab15e285f52441c7';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'methodeDeJeu';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Joueur.js';
+      sec-mem-desc-line = '159';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+La méthode de Jeu est abstraite par défaut et sera définie par les classes enfant.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Permet de aux joueurs de jouer
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Joueur.js';
+  cp-fileline  = '12';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Classe Joueur qui étend la classe abstraite Memory et de la classe abstraite Carte.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'Joueur';
+        node-link = {
+          node-link-id = 'class_joueur';
+        };
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'JoueurHumain';
+        node-link = {
+          node-link-id = 'class_joueur_humain';
+        };
+        node-child = {
+          child-id = '1';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 3;
+        node-label = 'JoueurMachine';
+        node-link = {
+          node-link-id = 'class_joueur_machine';
+        };
+        node-child = {
+          child-id = '1';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 4;
+        node-label = 'MachineDifficile';
+        node-link = {
+          node-link-id = 'class_machine_difficile';
+        };
+        node-child = {
+          child-id = '3';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 5;
+        node-label = 'MachineFacile';
+        node-link = {
+          node-link-id = 'class_machine_facile';
+        };
+        node-child = {
+          child-id = '3';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 6;
+        node-label = 'MachineMoyen';
+        node-link = {
+          node-link-id = 'class_machine_moyen';
+        };
+        node-child = {
+          child-id = '3';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'class_joueur_humain';
+  cp-name   = 'JoueurHumain';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'class_joueur';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_humain_1a77a99bd51a9164b822c90536886a0e01';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'retenirCartesHumains';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+carte1
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'carte1';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+carte2
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'carte2';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurHumain.js';
+      sec-mem-desc-line = '36';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Lorsque cette fonction est appelé le système ne modifie rien pour le joueur humain.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Elle est placée afin que le memory n'est pas à regarder qui est une machine et qui ne l'est pas
+@param {Carte} carte1 
+@param {Carte} carte2 
+@returns bool
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_humain_1a9d493ad1e8c5e844ba18dacf05c410d5';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+async
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'btnClick';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurHumain.js';
+      sec-mem-desc-line = '44';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Une fonction permettant l'attente d'un click bouton.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_humain_1a1a2c451ca14b0de178ea84a1b7d95905';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+async
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'methodeDeJeu';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurHumain.js';
+      sec-mem-desc-line = '55';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+La méthode de jeu du Joueur Humain.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurHumain.js';
+  cp-fileline  = '19';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Classe JoueurHumain qui étend la classe abstraite Joueur.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'Joueur';
+        node-link = {
+          node-link-id = 'class_joueur';
+        };
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'JoueurHumain';
+        node-link = {
+          node-link-id = 'class_joueur_humain';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'Joueur';
+        node-link = {
+          node-link-id = 'class_joueur';
+        };
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'JoueurHumain';
+        node-link = {
+          node-link-id = 'class_joueur_humain';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'class_joueur_machine';
+  cp-name   = 'JoueurMachine';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'class_joueur';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'class_machine_difficile';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'class_machine_facile';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'class_machine_moyen';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_machine_1a09c040207b7162eb04f6532909515ed6';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'constructor';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+pseudonyme
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'pseudonyme';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurMachine.js';
+      sec-mem-desc-line = '25';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+constructeur de la classe JoueurMachine
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param {string} pseudonyme 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_machine_1a6c14ba4d3f833ff7d5849be0d93f95bb';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getCapaMem';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurMachine.js';
+      sec-mem-desc-line = '38';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet de récuperer la capacité memoire de la machine.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@returns int
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_machine_1ab683021dcc5f569076830b5425d5358d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setCapaMem';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+cM
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'cM';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurMachine.js';
+      sec-mem-desc-line = '45';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet d'initialiser la capacite de memoire de la machine.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param {int} cM 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_machine_1a4f9ba9f5a68875cba2583d46e8731bc3';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getMemoire';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurMachine.js';
+      sec-mem-desc-line = '53';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet de récuperer les cartes connu par la machine.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@returns Carte
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_machine_1a9ed855f11bac0bb65b7b2651a4d95562';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setMemoire';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+listeCartes
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'listeCartes';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurMachine.js';
+      sec-mem-desc-line = '60';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Transmettre une liste de carte au joueur machine qu'il doit connaître.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param {Carte} listeCartes 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_machine_1ae3f0188761f0833ef7cd3f14c5026e45';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getProbaOubli';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurMachine.js';
+      sec-mem-desc-line = '68';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet de récuperer la probabilite d'oubli de carte de la machine.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@returns float
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_machine_1a3db93c9c5ca778ec17e6b326ea6041d0';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setProbaOubli';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+probabilite
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'probabilite';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurMachine.js';
+      sec-mem-desc-line = '75';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet d'initialiser la probabilite d'oubli de carte de la machine.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param {float} probabilite 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_machine_1a07ffcfb781454bc7ebd4c1a9b0bf813d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getDifficulte';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurMachine.js';
+      sec-mem-desc-line = '83';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet de récupérer la valeur numérique de la difficulté de la machine.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@returns int 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_machine_1add89c6c00681043490ee678cc241e4c6';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'setDifficulte';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+uneDifficulte
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'uneDifficulte';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurMachine.js';
+      sec-mem-desc-line = '91';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet de définir la valeur numérique de la difficulté de la machine.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param {int} uneDifficulte 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_machine_1a0be77b37a0d89c2bc8663196fd374e16';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+async
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'retournerUneCarte';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+positionCarte
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'positionCarte';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurMachine.js';
+      sec-mem-desc-line = '101';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet de retourner une carte dans la partie de memory.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param {string} positionCarte 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_machine_1a8411591bad6c4c32ba46e0b6f9e4422a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'oublierPremiereCarte';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurMachine.js';
+      sec-mem-desc-line = '114';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet d'oublier la premiere carte mise dans la mémoire de la machine.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_machine_1aab873117b8df44c8871abb664d1e5edf';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'retenirUneCarte';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Carte
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'Carte';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurMachine.js';
+      sec-mem-desc-line = '128';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet de retenir une carte dans la mémoire de la machine.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param {Carte} Carte 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_machine_1ae5e7306d0c998398d092495c056e08e4';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'retirerUneCarte';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Carte
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'Carte';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurMachine.js';
+      sec-mem-desc-line = '150';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet de retirer une carte de la mémoire de la machine.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param {Carte} Carte 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_machine_1a51f4bd5a3bb8271b138cf8b83535b17e';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+async
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'methodeDeJeu';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurMachine.js';
+      sec-mem-desc-line = '168';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet aux joueurs machine de jouer.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_machine_1a51d01aa300daa2da42a99e85ab941bd4';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+async
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'recherchePairesDebutJeu';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurMachine.js';
+      sec-mem-desc-line = '236';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet de rechercher une paire existante dans la mémoire de la machine avant de jouer une carte.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@returns bool
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_machine_1aba51148191ab149cf73bbf239f66ca69';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+async
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'recherchePaires';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurMachine.js';
+      sec-mem-desc-line = '280';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet de rechercher une carte qui serait paire à la première carte jouée du joueur.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@returns bool
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_machine_1a3277b1a0b64b97d02478143395bc0079';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'afficherMemoire';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurMachine.js';
+      sec-mem-desc-line = '325';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+On souhaite afficher la memoire du robot.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_machine_1a2330c97682359e5264792e64eb0d6d16';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'afficherUneCarte';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Carte
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'Carte';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurMachine.js';
+      sec-mem-desc-line = '351';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet d'afficher une carte dans la partie de memory.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param {Carte} Carte 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_joueur_machine_1afd013d717f93d28714038dc8c91ffe92';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'choixUneCarte';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurMachine.js';
+      sec-mem-desc-line = '360';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet à un joueur machine de choisir une carte.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurMachine.js';
+  cp-fileline  = '13';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Classe JoueurMachine qui étend la classe abstraite Joueur.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'Joueur';
+        node-link = {
+          node-link-id = 'class_joueur';
+        };
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'JoueurMachine';
+        node-link = {
+          node-link-id = 'class_joueur_machine';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 3;
+        node-label = 'MachineDifficile';
+        node-link = {
+          node-link-id = 'class_machine_difficile';
+        };
+        node-child = {
+          child-id = '1';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 4;
+        node-label = 'MachineFacile';
+        node-link = {
+          node-link-id = 'class_machine_facile';
+        };
+        node-child = {
+          child-id = '1';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 5;
+        node-label = 'MachineMoyen';
+        node-link = {
+          node-link-id = 'class_machine_moyen';
+        };
+        node-child = {
+          child-id = '1';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'Joueur';
+        node-link = {
+          node-link-id = 'class_joueur';
+        };
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'JoueurMachine';
+        node-link = {
+          node-link-id = 'class_joueur_machine';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'class_machine_difficile';
+  cp-name   = 'MachineDifficile';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'class_joueur_machine';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_machine_difficile_1a4279a3e78e5cac64604e4846eb05a049';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'constructor';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+pseudonyme
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'pseudonyme';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/typeMachines/machineDifficile.js';
+      sec-mem-desc-line = '23';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+constructeur de la machine difficile
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param {string} pseudonyme 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_machine_difficile_1ab9ec67b8470f5893ab5ae8bbb149ced5';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+async
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'retenirCartesHumains';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+posCarte1
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'posCarte1';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+posCarte2
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'posCarte2';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/typeMachines/machineDifficile.js';
+      sec-mem-desc-line = '37';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet de retenir les deux cartes retournées par le joueur dans la mémoire de la machine.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_machine_difficile_1aa9f8b231cdc5b9854b42e295addffb70';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'choixUneCarte';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/typeMachines/machineDifficile.js';
+      sec-mem-desc-line = '73';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet de choisir deux cartes dans le tableau du Memory.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/typeMachines/machineDifficile.js';
+  cp-fileline  = '13';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Classe MachineDifficile qui étend la classe abstraite JoueurMachine.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 3;
+        node-label = 'Joueur';
+        node-link = {
+          node-link-id = 'class_joueur';
+        };
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'JoueurMachine';
+        node-link = {
+          node-link-id = 'class_joueur_machine';
+        };
+        node-child = {
+          child-id = '3';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'MachineDifficile';
+        node-link = {
+          node-link-id = 'class_machine_difficile';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 3;
+        node-label = 'Joueur';
+        node-link = {
+          node-link-id = 'class_joueur';
+        };
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'JoueurMachine';
+        node-link = {
+          node-link-id = 'class_joueur_machine';
+        };
+        node-child = {
+          child-id = '3';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'MachineDifficile';
+        node-link = {
+          node-link-id = 'class_machine_difficile';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'class_machine_facile';
+  cp-name   = 'MachineFacile';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'class_joueur_machine';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_machine_facile_1a67edf76d8fb78ab0b44c6bea95f796ca';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'constructor';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+pseudonyme
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'pseudonyme';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/typeMachines/machineFacile.js';
+      sec-mem-desc-line = '23';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+constructeur de la classe machine en difficulte facile
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param {string} pseudonyme 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_machine_facile_1a87c5fb5e72219eb4ca55711eb501527f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'retenirCartesHumains';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+carte1
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'carte1';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+carte2
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'carte2';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/typeMachines/machineFacile.js';
+      sec-mem-desc-line = '38';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Ne retiens aucune carte car le mode de difficulte de la machine est en mode facile.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param {Carte} carte1 
+@param {Carte} carte2 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_machine_facile_1a1b90ca8a1f9b13db10b98e25ef602ae8';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'choixUneCarte';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/typeMachines/machineFacile.js';
+      sec-mem-desc-line = '45';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet de choisir une carte dans la partie memory.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/typeMachines/machineFacile.js';
+  cp-fileline  = '13';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Classe MachineFacile qui étend la classe abstraite JoueurMachine.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 3;
+        node-label = 'Joueur';
+        node-link = {
+          node-link-id = 'class_joueur';
+        };
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'JoueurMachine';
+        node-link = {
+          node-link-id = 'class_joueur_machine';
+        };
+        node-child = {
+          child-id = '3';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'MachineFacile';
+        node-link = {
+          node-link-id = 'class_machine_facile';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 3;
+        node-label = 'Joueur';
+        node-link = {
+          node-link-id = 'class_joueur';
+        };
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'JoueurMachine';
+        node-link = {
+          node-link-id = 'class_joueur_machine';
+        };
+        node-child = {
+          child-id = '3';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'MachineFacile';
+        node-link = {
+          node-link-id = 'class_machine_facile';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'class_machine_moyen';
+  cp-name   = 'MachineMoyen';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'class_joueur_machine';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_machine_moyen_1abc5f090cee095334d891fc82bddc52f9';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'constructor';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+pseudonyme
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'pseudonyme';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/typeMachines/machineMoyen.js';
+      sec-mem-desc-line = '24';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+constructeur de la classe machine moyenne
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param {string} pseudonyme 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_machine_moyen_1a3f236e22e2e010eb3fe1221b9190dc28';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+async
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'retenirCartesHumains';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+posCarte1
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'posCarte1';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+posCarte2
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'posCarte2';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/typeMachines/machineMoyen.js';
+      sec-mem-desc-line = '39';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet à la machine moyenne de retenir les cartes jouées pendant la partie du memory.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param {Carte} posCarte1 
+@param {Carte} posCarte2 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_machine_moyen_1a01d22eea8dfbaba908537b7dbcc8dee4';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'choixUneCarte';
+      sec-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/typeMachines/machineMoyen.js';
+      sec-mem-desc-line = '68';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Permet à la machine moyenne de choisir une carte.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/typeMachines/machineMoyen.js';
+  cp-fileline  = '14';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Classe MachineMoyen qui étend la classe abstraite JoueurMachine.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 3;
+        node-label = 'Joueur';
+        node-link = {
+          node-link-id = 'class_joueur';
+        };
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'JoueurMachine';
+        node-link = {
+          node-link-id = 'class_joueur_machine';
+        };
+        node-child = {
+          child-id = '3';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'MachineMoyen';
+        node-link = {
+          node-link-id = 'class_machine_moyen';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 3;
+        node-label = 'Joueur';
+        node-link = {
+          node-link-id = 'class_joueur';
+        };
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'JoueurMachine';
+        node-link = {
+          node-link-id = 'class_joueur_machine';
+        };
+        node-child = {
+          child-id = '3';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'MachineMoyen';
+        node-link = {
+          node-link-id = 'class_machine_moyen';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+file = {
+  file-id   = '_carte_8js';
+  file-name = 'Carte.js';
+  file-full-name  = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Carte.js';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Avoir des cartes modifiables en direct dans le jeu du Memory.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@date  17 Janvier 2023
+@author D. Lanusse
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_joueur_8js';
+  file-name = 'Joueur.js';
+  file-full-name  = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Joueur.js';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Une classe abstraite contenant des attributs et fonctions partagés par tous les joueurs.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+ Certaines fonctions sont à redéfinir dans les classes filles
+@date  17 Janvier 2023
+@author D. Lanusse
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_memory_8js';
+  file-name = 'Memory.js';
+  file-full-name  = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/Memory.js';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Permettre à un utilisateur de jouer au jeu du Memory contre un autre utilisateur local ou un ordinateur.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@date  17 Janvier 2023
+@author D. Lanusse
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'joueur_humain_8js';
+  file-name = 'joueurHumain.js';
+  file-full-name  = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurHumain.js';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+La classe permettant à un joueur humain de jouer au jeu du Memory.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@date  17 Janvier 2023
+@author D. Lanusse
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'joueur_machine_8js';
+  file-name = 'joueurMachine.js';
+  file-full-name  = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/joueurMachine.js';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+La classe permet à la machine de jouer au jeu du Memory.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@date  17 Janvier 2023
+@author L. Gaigne
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'machine_difficile_8js';
+  file-name = 'machineDifficile.js';
+  file-full-name  = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/typeMachines/machineDifficile.js';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+La classe permettant à une machine de niveau difficile de jouer au Memory.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@date  17 Janvier 2023
+@author D. Lanusse
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'machine_facile_8js';
+  file-name = 'machineFacile.js';
+  file-full-name  = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/typeMachines/machineFacile.js';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+La classe permettant à une machine de niveau facile de jouer au Memory.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@date  17 Janvier 2023
+@author D. Lanusse
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'machine_moyen_8js';
+  file-name = 'machineMoyen.js';
+  file-full-name  = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Classes/typeJoueurs/typeMachines/machineMoyen.js';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+La classe permettant à une machine de niveau moyenne de jouer au Memory.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@date  17 Janvier 2023
+@author D. Lanusse
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'niveau_machine_8php';
+  file-name = 'niveauMachine.php';
+    var = {
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'niveau_machine_8php_1a4b5983900ad3b5b0974028b47cb9681c';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+if(isset($_POST['lvlMachine']))
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'else';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+{
+        
+        print "<script type='text/javascript'>localStorage.setItem('nivMachine', 'none')</script>"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Fichiers-php/niveauMachine.php';
+      var-mem-desc-line = '20';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    };
+  file-full-name  = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Fichiers-php/niveauMachine.php';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'formulaire_difficulte_bot_8html';
+  file-name = 'formulaireDifficulteBot.html';
+  file-full-name  = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/formulaireDifficulteBot.html';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_main_8html';
+  file-name = 'Main.html';
+  file-full-name  = 'C:/Users/dieud/Documents/doxygenTest/S301-Jdsel-doxy/C1 - Développement/src/Main.html';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
