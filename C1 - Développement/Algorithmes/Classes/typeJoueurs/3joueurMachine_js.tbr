@@ -1,0 +1,788 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>joueurMachine_js</nom>
+  <date_creation>22/1/2023 18:32</date_creation>
+  <Elements>
+    <Action>
+      <Position>525;63</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>trouve</PostAssertion>
+      <Titre>joueurMachine.recherche
+PairesDebutJeu()</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>0</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>244;202</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>trouve, index1, index2, i, j</PostAssertion>
+          <Titre>Initialisation des
+variables</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>35;328</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>trouve ← 
+false</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>125;328</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>index1 ← 
+entier</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>212;330</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>index2 ← 
+entier</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>307;329</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>i ← 
+entier</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>380;331</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>j ← 
+entier</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>659;196</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>trouve, index1, index2, i, j</PreAssertion>
+          <PostAssertion>trouve</PostAssertion>
+          <Titre>Traitements</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>1021;321</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>return trouve</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Sortie>
+              <Position>1168;331</Position>
+            </Sortie>
+            <Action>
+              <Position>665;320</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>trouve, index1, index2, i, j</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>On parcourt 
+la mémoire</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants>
+                <Iteration>
+                  <Position>887.5;428.5</Position>
+                  <StyleLien>1</StyleLien>
+                  <Titre>i allant de 0 à 
+this.memoire.length</Titre>
+                  <IterationFixe>1</IterationFixe>
+                  <Enfants>
+                    <Iteration>
+                      <Position>887.5;515.5</Position>
+                      <StyleLien>1</StyleLien>
+                      <Titre>j allant de i à 
+this.memoire.length</Titre>
+                      <IterationFixe>1</IterationFixe>
+                      <Enfants>
+                        <Condition>
+                          <Position>875.5;610</Position>
+                          <StyleLien>0</StyleLien>
+                          <estUnique>0</estUnique>
+                          <operationsLogiques>
+                            <operation>
+                              <Titre>*</Titre>
+                              <Enfants>
+                                <Condition>
+                                  <Position>862.5;692</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <estUnique>0</estUnique>
+                                  <operationsLogiques>
+                                    <operation>
+                                      <Titre>i != j</Titre>
+                                      <Enfants>
+                                        <Action>
+                                          <Position>184;779</Position>
+                                          <StyleLien>2</StyleLien>
+                                          <PreAssertion>?</PreAssertion>
+                                          <PostAssertion>?</PostAssertion>
+                                          <Titre>On place les positions 
+dans la mémoire</Titre>
+                                          <DetailsVisible>0</DetailsVisible>
+                                          <DetailsVideVisible>1</DetailsVideVisible>
+                                          <Enfants>
+                                            <Action>
+                                              <Position>12;874</Position>
+                                              <StyleLien>1</StyleLien>
+                                              <PreAssertion>?</PreAssertion>
+                                              <PostAssertion>?</PostAssertion>
+                                              <Titre>SL.setItem("Coup1",
+this.memoire[i].getPosition())</Titre>
+                                              <DetailsVisible>0</DetailsVisible>
+                                              <DetailsVideVisible>1</DetailsVideVisible>
+                                              <Enfants/>
+                                            </Action>
+                                            <Action>
+                                              <Position>238;874</Position>
+                                              <StyleLien>1</StyleLien>
+                                              <PreAssertion>?</PreAssertion>
+                                              <PostAssertion>?</PostAssertion>
+                                              <Titre>SL.setItem("Coup2",
+this.memoire[j].getPosition())</Titre>
+                                              <DetailsVisible>0</DetailsVisible>
+                                              <DetailsVideVisible>1</DetailsVideVisible>
+                                              <Enfants/>
+                                            </Action>
+                                          </Enfants>
+                                        </Action>
+                                        <Action>
+                                          <Position>512;781</Position>
+                                          <StyleLien>2</StyleLien>
+                                          <PreAssertion>index1, 
+index2</PreAssertion>
+                                          <PostAssertion>index1, 
+index2</PostAssertion>
+                                          <Titre>On récupère l'index des cartes</Titre>
+                                          <DetailsVisible>1</DetailsVisible>
+                                          <DetailsVideVisible>1</DetailsVideVisible>
+                                          <Enfants>
+                                            <Action>
+                                              <Position>467;876</Position>
+                                              <StyleLien>1</StyleLien>
+                                              <PreAssertion>?</PreAssertion>
+                                              <PostAssertion>?</PostAssertion>
+                                              <Titre>index1 ← this.monMemory.
+retournerIndexParPosition</Titre>
+                                              <DetailsVisible>0</DetailsVisible>
+                                              <DetailsVideVisible>1</DetailsVideVisible>
+                                              <Enfants/>
+                                            </Action>
+                                            <Action>
+                                              <Position>686;876</Position>
+                                              <StyleLien>1</StyleLien>
+                                              <PreAssertion>?</PreAssertion>
+                                              <PostAssertion>?</PostAssertion>
+                                              <Titre>index2 ← this.monMemory.
+retournerIndexParPosition</Titre>
+                                              <DetailsVisible>0</DetailsVisible>
+                                              <DetailsVideVisible>1</DetailsVideVisible>
+                                              <Enfants/>
+                                            </Action>
+                                          </Enfants>
+                                        </Action>
+                                        <Action>
+                                          <Position>1013;784</Position>
+                                          <StyleLien>2</StyleLien>
+                                          <PreAssertion>?</PreAssertion>
+                                          <PostAssertion>?</PostAssertion>
+                                          <Titre>On retourne les cartes</Titre>
+                                          <DetailsVisible>0</DetailsVisible>
+                                          <DetailsVideVisible>1</DetailsVideVisible>
+                                          <Enfants>
+                                            <Action>
+                                              <Position>909;878</Position>
+                                              <StyleLien>1</StyleLien>
+                                              <PreAssertion>?</PreAssertion>
+                                              <PostAssertion>?</PostAssertion>
+                                              <Titre>this.retournerUneCarte(this.
+memoire[i].getPosition())</Titre>
+                                              <DetailsVisible>0</DetailsVisible>
+                                              <DetailsVideVisible>1</DetailsVideVisible>
+                                              <Enfants/>
+                                            </Action>
+                                            <Action>
+                                              <Position>1114;878</Position>
+                                              <StyleLien>1</StyleLien>
+                                              <PreAssertion>?</PreAssertion>
+                                              <PostAssertion>?</PostAssertion>
+                                              <Titre>this.retournerUneCarte(this.
+memoire[j].getPosition())</Titre>
+                                              <DetailsVisible>0</DetailsVisible>
+                                              <DetailsVideVisible>1</DetailsVideVisible>
+                                              <Enfants/>
+                                            </Action>
+                                          </Enfants>
+                                        </Action>
+                                        <Action>
+                                          <Position>1373;781</Position>
+                                          <StyleLien>2</StyleLien>
+                                          <PreAssertion>index1,
+index2</PreAssertion>
+                                          <PostAssertion>?</PostAssertion>
+                                          <Titre>On sort les cartes de 
+notre mémoire</Titre>
+                                          <DetailsVisible>1</DetailsVisible>
+                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                          <Enfants>
+                                            <Action>
+                                              <Position>1329;881</Position>
+                                              <StyleLien>1</StyleLien>
+                                              <PreAssertion>?</PreAssertion>
+                                              <PostAssertion>?</PostAssertion>
+                                              <Titre>this.retirerUneCarte(this.
+getMonMemory().</Titre>
+                                              <DetailsVisible>0</DetailsVisible>
+                                              <DetailsVideVisible>1</DetailsVideVisible>
+                                              <Enfants/>
+                                            </Action>
+                                            <Action>
+                                              <Position>1532;880</Position>
+                                              <StyleLien>1</StyleLien>
+                                              <PreAssertion>?</PreAssertion>
+                                              <PostAssertion>?</PostAssertion>
+                                              <Titre>this.retirerUneCarte(this.
+getMonMemory().</Titre>
+                                              <DetailsVisible>0</DetailsVisible>
+                                              <DetailsVideVisible>1</DetailsVideVisible>
+                                              <Enfants/>
+                                            </Action>
+                                          </Enfants>
+                                        </Action>
+                                        <Action>
+                                          <Position>1731;783</Position>
+                                          <StyleLien>2</StyleLien>
+                                          <PreAssertion>trouve</PreAssertion>
+                                          <PostAssertion>?</PostAssertion>
+                                          <Titre>On retourne 
+trouve = true</Titre>
+                                          <DetailsVisible>1</DetailsVisible>
+                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                          <Enfants>
+                                            <Action>
+                                              <Position>1740;879</Position>
+                                              <StyleLien>1</StyleLien>
+                                              <PreAssertion>?</PreAssertion>
+                                              <PostAssertion>?</PostAssertion>
+                                              <Titre>trouve ← 
+true</Titre>
+                                              <DetailsVisible>0</DetailsVisible>
+                                              <DetailsVideVisible>1</DetailsVideVisible>
+                                              <Enfants/>
+                                            </Action>
+                                            <Action>
+                                              <Position>1838;878</Position>
+                                              <StyleLien>1</StyleLien>
+                                              <PreAssertion>?</PreAssertion>
+                                              <PostAssertion>?</PostAssertion>
+                                              <Titre>return 
+trouve</Titre>
+                                              <DetailsVisible>0</DetailsVisible>
+                                              <DetailsVideVisible>1</DetailsVideVisible>
+                                              <Enfants/>
+                                            </Action>
+                                            <Sortie>
+                                              <Position>1937;887</Position>
+                                            </Sortie>
+                                          </Enfants>
+                                        </Action>
+                                      </Enfants>
+                                    </operation>
+                                  </operationsLogiques>
+                                </Condition>
+                              </Enfants>
+                            </operation>
+                          </operationsLogiques>
+                        </Condition>
+                      </Enfants>
+                    </Iteration>
+                  </Enfants>
+                </Iteration>
+              </Enfants>
+            </Action>
+          </Enfants>
+        </Action>
+      </Enfants>
+    </Action>
+    <Action>
+      <Position>970;602</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>*this.memoire[i].getValeur()=
+this.memoire[j].getValeur()</Titre>
+      <DetailsVisible>0</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants/>
+    </Action>
+    <Action>
+      <Position>492;927</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>(this.memoire[i].
+getPosition())</Titre>
+      <DetailsVisible>0</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants/>
+    </Action>
+    <Action>
+      <Position>711;927</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>(this.memoire[j].
+getPosition())</Titre>
+      <DetailsVisible>0</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants/>
+    </Action>
+    <Action>
+      <Position>1327;932</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>getMesCartes()[index1]</Titre>
+      <DetailsVisible>0</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants/>
+    </Action>
+    <Action>
+      <Position>1530;931</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>getMesCartes()[index2]</Titre>
+      <DetailsVisible>0</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants/>
+    </Action>
+    <Action>
+      <Position>1432;1867</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>getMesCartes()[index2]</Titre>
+      <DetailsVisible>0</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants/>
+    </Action>
+    <Action>
+      <Position>695;1849</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>(this.memoire[i].
+getPosition())</Titre>
+      <DetailsVisible>0</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants/>
+    </Action>
+    <Action>
+      <Position>1229;1868</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>getMesCartes()[index1]</Titre>
+      <DetailsVisible>0</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants/>
+    </Action>
+    <Action>
+      <Position>1221;1480</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>*this.memoire[i].getValeur()=
+valeurCoup1</Titre>
+      <DetailsVisible>0</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants/>
+    </Action>
+    <Action>
+      <Position>517;1027</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>trouve</PostAssertion>
+      <Titre>joueurMachine.recherche
+Paires()</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>0</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>236;1166</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>positionCoup1, index1, index2 valeurCoup1, trouve, i</PostAssertion>
+          <Titre>Initialisation des
+variables</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>658;1288</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>trouve ← 
+false</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>186;1288</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>index1 ← this.
+getMonMemory().</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>748;1288</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>i ← 
+entier</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>387;1296</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>valeurCoup1 ← this.
+getMonMemory().</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>-10;1286</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>positionCoup1←
+SL.getItem("Coup1")</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>570;1286</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>index2 ← 
+entier</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>908;1159</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>positionCoup1, index, valeurCoup1, trouve, i</PreAssertion>
+          <PostAssertion>trouve</PostAssertion>
+          <Titre>Traitements</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>1270;1284</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>return trouve</Titre>
+              <DetailsVisible>0</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Sortie>
+              <Position>1417;1294</Position>
+            </Sortie>
+            <Action>
+              <Position>914;1283</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>positionCoup1, index, valeurCoup1, trouve, i</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>On parcourt 
+la mémoire</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants>
+                <Iteration>
+                  <Position>1136.5;1391.5</Position>
+                  <StyleLien>1</StyleLien>
+                  <Titre>i allant de 0 à 
+this.memoire.length</Titre>
+                  <IterationFixe>1</IterationFixe>
+                  <Enfants>
+                    <Condition>
+                      <Position>1126.5;1488</Position>
+                      <StyleLien>0</StyleLien>
+                      <estUnique>0</estUnique>
+                      <operationsLogiques>
+                        <operation>
+                          <Titre>*</Titre>
+                          <Enfants>
+                            <Condition>
+                              <Position>1065.5;1573</Position>
+                              <StyleLien>1</StyleLien>
+                              <estUnique>0</estUnique>
+                              <operationsLogiques>
+                                <operation>
+                                  <Titre>positionCoup1 !=this.
+memoire[i].getPosition()</Titre>
+                                  <Enfants>
+                                    <Action>
+                                      <Position>178;1701</Position>
+                                      <StyleLien>2</StyleLien>
+                                      <PreAssertion>?</PreAssertion>
+                                      <PostAssertion>?</PostAssertion>
+                                      <Titre>On place la position du 
+coup2 dans la mémoire</Titre>
+                                      <DetailsVisible>0</DetailsVisible>
+                                      <DetailsVideVisible>1</DetailsVideVisible>
+                                      <Enfants>
+                                        <Action>
+                                          <Position>163;1797</Position>
+                                          <StyleLien>1</StyleLien>
+                                          <PreAssertion>?</PreAssertion>
+                                          <PostAssertion>?</PostAssertion>
+                                          <Titre>SL.setItem("Coup2",
+this.memoire[i].getPosition())</Titre>
+                                          <DetailsVisible>0</DetailsVisible>
+                                          <DetailsVideVisible>1</DetailsVideVisible>
+                                          <Enfants/>
+                                        </Action>
+                                      </Enfants>
+                                    </Action>
+                                    <Action>
+                                      <Position>496;1703</Position>
+                                      <StyleLien>2</StyleLien>
+                                      <PreAssertion>index1, 
+index2</PreAssertion>
+                                      <PostAssertion>index1, 
+index2</PostAssertion>
+                                      <Titre>On récupère l'index des cartes</Titre>
+                                      <DetailsVisible>1</DetailsVisible>
+                                      <DetailsVideVisible>1</DetailsVideVisible>
+                                      <Enfants>
+                                        <Action>
+                                          <Position>451;1798</Position>
+                                          <StyleLien>1</StyleLien>
+                                          <PreAssertion>?</PreAssertion>
+                                          <PostAssertion>?</PostAssertion>
+                                          <Titre>index1 ← this.monMemory.
+retournerIndexParPosition</Titre>
+                                          <DetailsVisible>0</DetailsVisible>
+                                          <DetailsVideVisible>1</DetailsVideVisible>
+                                          <Enfants/>
+                                        </Action>
+                                        <Action>
+                                          <Position>670;1798</Position>
+                                          <StyleLien>1</StyleLien>
+                                          <PreAssertion>?</PreAssertion>
+                                          <PostAssertion>?</PostAssertion>
+                                          <Titre>index2 ← this.monMemory.
+retournerIndexParPosition</Titre>
+                                          <DetailsVisible>0</DetailsVisible>
+                                          <DetailsVideVisible>1</DetailsVideVisible>
+                                          <Enfants/>
+                                        </Action>
+                                      </Enfants>
+                                    </Action>
+                                    <Action>
+                                      <Position>1000;1713</Position>
+                                      <StyleLien>2</StyleLien>
+                                      <PreAssertion>?</PreAssertion>
+                                      <PostAssertion>?</PostAssertion>
+                                      <Titre>On retourne la carte</Titre>
+                                      <DetailsVisible>0</DetailsVisible>
+                                      <DetailsVideVisible>1</DetailsVideVisible>
+                                      <Enfants>
+                                        <Action>
+                                          <Position>976;1811</Position>
+                                          <StyleLien>1</StyleLien>
+                                          <PreAssertion>?</PreAssertion>
+                                          <PostAssertion>?</PostAssertion>
+                                          <Titre>this.retournerUneCarte(this.
+memoire[i].getPosition())</Titre>
+                                          <DetailsVisible>0</DetailsVisible>
+                                          <DetailsVideVisible>1</DetailsVideVisible>
+                                          <Enfants/>
+                                        </Action>
+                                      </Enfants>
+                                    </Action>
+                                    <Action>
+                                      <Position>1275;1717</Position>
+                                      <StyleLien>2</StyleLien>
+                                      <PreAssertion>index1,
+index2</PreAssertion>
+                                      <PostAssertion>?</PostAssertion>
+                                      <Titre>On sort les cartes de 
+notre mémoire</Titre>
+                                      <DetailsVisible>1</DetailsVisible>
+                                      <DetailsVideVisible>0</DetailsVideVisible>
+                                      <Enfants>
+                                        <Action>
+                                          <Position>1231;1817</Position>
+                                          <StyleLien>1</StyleLien>
+                                          <PreAssertion>?</PreAssertion>
+                                          <PostAssertion>?</PostAssertion>
+                                          <Titre>this.retirerUneCarte(this.
+getMonMemory().</Titre>
+                                          <DetailsVisible>0</DetailsVisible>
+                                          <DetailsVideVisible>1</DetailsVideVisible>
+                                          <Enfants/>
+                                        </Action>
+                                        <Action>
+                                          <Position>1434;1816</Position>
+                                          <StyleLien>1</StyleLien>
+                                          <PreAssertion>?</PreAssertion>
+                                          <PostAssertion>?</PostAssertion>
+                                          <Titre>this.retirerUneCarte(this.
+getMonMemory().</Titre>
+                                          <DetailsVisible>0</DetailsVisible>
+                                          <DetailsVideVisible>1</DetailsVideVisible>
+                                          <Enfants/>
+                                        </Action>
+                                      </Enfants>
+                                    </Action>
+                                    <Action>
+                                      <Position>1641;1714</Position>
+                                      <StyleLien>2</StyleLien>
+                                      <PreAssertion>trouve</PreAssertion>
+                                      <PostAssertion>?</PostAssertion>
+                                      <Titre>On retourne 
+trouve = true</Titre>
+                                      <DetailsVisible>1</DetailsVisible>
+                                      <DetailsVideVisible>0</DetailsVideVisible>
+                                      <Enfants>
+                                        <Action>
+                                          <Position>1650;1810</Position>
+                                          <StyleLien>1</StyleLien>
+                                          <PreAssertion>?</PreAssertion>
+                                          <PostAssertion>?</PostAssertion>
+                                          <Titre>trouve ← 
+true</Titre>
+                                          <DetailsVisible>0</DetailsVisible>
+                                          <DetailsVideVisible>1</DetailsVideVisible>
+                                          <Enfants/>
+                                        </Action>
+                                        <Action>
+                                          <Position>1748;1809</Position>
+                                          <StyleLien>1</StyleLien>
+                                          <PreAssertion>?</PreAssertion>
+                                          <PostAssertion>?</PostAssertion>
+                                          <Titre>return 
+trouve</Titre>
+                                          <DetailsVisible>0</DetailsVisible>
+                                          <DetailsVideVisible>1</DetailsVideVisible>
+                                          <Enfants/>
+                                        </Action>
+                                        <Sortie>
+                                          <Position>1847;1818</Position>
+                                        </Sortie>
+                                      </Enfants>
+                                    </Action>
+                                  </Enfants>
+                                </operation>
+                              </operationsLogiques>
+                            </Condition>
+                          </Enfants>
+                        </operation>
+                      </operationsLogiques>
+                    </Condition>
+                  </Enfants>
+                </Iteration>
+              </Enfants>
+            </Action>
+          </Enfants>
+        </Action>
+      </Enfants>
+    </Action>
+    <Action>
+      <Position>462;1848</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>(SL.getItem("Coup1"))</Titre>
+      <DetailsVisible>0</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants/>
+    </Action>
+    <Action>
+      <Position>375;1346</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>getMesCartes()[index1].
+getValeur()</Titre>
+      <DetailsVisible>0</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants/>
+    </Action>
+    <Action>
+      <Position>88;38</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>Stockage Local = SL</Titre>
+      <DetailsVisible>0</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants/>
+    </Action>
+    <Action>
+      <Position>156;1338</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>retournerIndexParPosition
+(positionCoup1)</Titre>
+      <DetailsVisible>0</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants/>
+    </Action>
+  </Elements>
+</Algorithme>

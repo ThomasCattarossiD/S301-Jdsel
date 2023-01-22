@@ -64,6 +64,7 @@ export class JoueurMachine extends Joueur{
     }
 
     //METHODES METIERS
+    // Permet de retourner une carte en partant de sa position
     async retournerUneCarte(positionCarte){
         // On récupère l'index de la carte dans le jeu memory
         let indexCarte = this.getMonMemory().retournerIndexParPosition(positionCarte)
@@ -96,7 +97,7 @@ export class JoueurMachine extends Joueur{
         // Si on ne trouve pas la carte à mémoriser dans la mémoire
         if(!trouve){
             if(this.#memoire.length + 1 > this.#capaMem){
-                this.oublierPremiereCarte()
+                this.#memoire.splice(0,1);
             }
             this.#memoire.push(Carte)
         }
@@ -117,6 +118,7 @@ export class JoueurMachine extends Joueur{
         return Promise.resolve()
     }
 
+    // La méthode de jeu d'un joueur étant une machine
     async methodeDeJeu(){
         // On attend trois secondes avant de poursuivre l'exécution
         await new Promise(r => setTimeout(r, 3000))
@@ -140,8 +142,8 @@ export class JoueurMachine extends Joueur{
 
         // On lance la fonction qui affiche
         await this.getMonMemory().afficherJeu()
-        await this.afficherMemoire()
-        // On attend une seconde avant de poursuivre l'exécution
+        //await this.afficherMemoire()
+        // On attend trois secondes avant de poursuivre l'exécution
         await new Promise(r => setTimeout(r, 3000))
         
 
@@ -159,7 +161,7 @@ export class JoueurMachine extends Joueur{
         }
 
         await this.choixUneCarte()
-        await this.afficherMemoire()
+        //await this.afficherMemoire()
 
         // On récupère l'index des cartes pour les retourner
         let index1 = this.getMonMemory().retournerIndexParPosition(localStorage.getItem("Coup1"))
@@ -195,19 +197,19 @@ export class JoueurMachine extends Joueur{
                     localStorage.setItem("Coup2", this.#memoire[j].getPosition())
 
                     // On récupère l'index des cartes pour les retourner
-                    let index1 = this.getMonMemory().retournerIndexParPosition(localStorage.getItem("Coup1"))
-                    let index2 = this.getMonMemory().retournerIndexParPosition(localStorage.getItem("Coup2"))
+                    let index1 = this.getMonMemory().retournerIndexParPosition(this.#memoire[i].getPosition())
+                    let index2 = this.getMonMemory().retournerIndexParPosition(this.#memoire[j].getPosition())
 
                     // On retourne les cartes
-                    this.retournerUneCarte(localStorage.getItem("Coup1"))
-                    this.retournerUneCarte(localStorage.getItem("Coup2"))
+                    this.retournerUneCarte(this.#memoire[i].getPosition())
+                    this.retournerUneCarte(this.#memoire[j].getPosition())
 
                     // On sort les cartes de notre memoire
                     await this.retirerUneCarte(this.getMonMemory().getMesCartes()[index1])
                     await this.retirerUneCarte(this.getMonMemory().getMesCartes()[index2])
 
                     
-                    await this.afficherMemoire()
+                    //await this.afficherMemoire()
                     
                     // On retourne qu'on a trouvé une paire
                     trouve = true
@@ -239,9 +241,9 @@ export class JoueurMachine extends Joueur{
                 // On place la position du coup 2 dans la mémoire
                 localStorage.setItem("Coup2", this.#memoire[i].getPosition())
 
-                // On récupère l'index des cartes pour les sortir de notre memoire
-                let index1 = this.getMonMemory().retournerIndexParPosition(localStorage.getItem("Coup1"))
-                let index2 = this.getMonMemory().retournerIndexParPosition(localStorage.getItem("Coup2"))
+                // On récupère l'index des cartes pour les retourner
+                let index1 = this.getMonMemory().retournerIndexParPosition(this.#memoire[i].getPosition())
+                let index2 = this.getMonMemory().retournerIndexParPosition(this.#memoire[j].getPosition())
 
                 // On retourne les cartes
                 this.retournerUneCarte(localStorage.getItem("Coup2"))
