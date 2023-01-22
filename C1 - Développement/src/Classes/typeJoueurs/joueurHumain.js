@@ -47,6 +47,7 @@ export class JoueurHumain extends Joueur{
         let bouton = document.getElementById('leBoutonValider')
         bouton.disabled = false;
 
+        // On joue la première carte
         // Tant que la carte n'est pas valable
         while(!carteValable){
             // On attend le clic du bouton valider avant de continuer
@@ -93,6 +94,7 @@ export class JoueurHumain extends Joueur{
         // La prochaine carte est par défaut non valable
         carteValable = false
 
+        // On joue la deuxieme carte
         // Tant que la carte n'est pas valable
         while(!carteValable){
             // On attend le clic du bouton valider
