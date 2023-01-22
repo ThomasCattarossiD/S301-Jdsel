@@ -106,7 +106,7 @@ export class Carte{
 
     // On retourne notre carte
     retournerCarte(){
-        // Si la estRetournee est vrai, il devient faux
+        // Si la variable estRetournee est vrai, il devient faux
         if(this.#estRetournee){
             this.#estRetournee = false
         }
