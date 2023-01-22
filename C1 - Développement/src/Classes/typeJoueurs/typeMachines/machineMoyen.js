@@ -36,12 +36,8 @@ export class MachineMoyen extends JoueurMachine{
         let carte2 = this.getMonMemory().getMesCartes()[index2]
 
         if(!carte1.equals(carte2)){
-            // L'index de la carte en position carte2
-            let index = this.getMonMemory().retournerIndexParPosition(posCarte2)
-            // On récupère la carte en position carte2
-            let carte = this.getMonMemory().getMesCartes()[index]
             // On place la carte dans notre mémoire
-            this.retenirUneCarte(carte)
+            this.retenirUneCarte(carte2)
         }
         else{
             await this.retirerUneCarte(carte1)
@@ -49,7 +45,7 @@ export class MachineMoyen extends JoueurMachine{
 
         }
 
-        await this.afficherMemoire()
+        //await this.afficherMemoire()
     }
 
     choixUneCarte(){
@@ -57,7 +53,7 @@ export class MachineMoyen extends JoueurMachine{
         let listePositions = localStorage.getItem("lesPositions")
 
         // On transforme la liste des positions possibles en un tableau
-        let tableauPositions = listePositions.split(',')
+        let tableau = listePositions.split(',')
 
         // On récupère la liste des positions des cartes que l'on connait
         let listeCartes = []
@@ -70,11 +66,11 @@ export class MachineMoyen extends JoueurMachine{
         // On créé une liste des positions que l'on ne connait pas
         let listeNonConnues = []
         // Pour chaque position de listePositions
-        for(let i = 0; i < tableauPositions.length; i++){
+        for(let i = 0; i < tableau.length; i++){
             // Si les positions des cartes de la mémoire de contiennent pas la position i
-            if(!(listeCartes.includes(tableauPositions[i]))){
+            if(!(listeCartes.includes(tableau[i]))){
                 // Alors on rajoute la position à la liste des positions que l'on ne connait pas
-                listeNonConnues.push(tableauPositions[i])
+                listeNonConnues.push(tableau[i])
             }
         }
 
@@ -106,7 +102,7 @@ export class MachineMoyen extends JoueurMachine{
         // On place la carte dans notre mémoire
         this.retenirUneCarte(carte)
 
-        localStorage.setItem('memoryMoyen', this.getMemoire())
+        //localStorage.setItem('memoryMoyen', this.getMemoire())
 
         return Promise.resolve
     }

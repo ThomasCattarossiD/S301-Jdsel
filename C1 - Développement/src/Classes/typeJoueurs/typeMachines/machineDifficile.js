@@ -36,19 +36,9 @@ export class MachineDifficile extends JoueurMachine{
         let carte2 = this.getMonMemory().getMesCartes()[index2]
 
         if(!carte1.equals(carte2)){
-            // L'index de la carte en position carte1
-            let index = this.getMonMemory().retournerIndexParPosition(posCarte1)
-            // On récupère la carte en position carte1
-            let carte = this.getMonMemory().getMesCartes()[index]
-            // On place la carte dans notre mémoire
-            this.retenirUneCarte(carte)
-
-            // L'index de la carte en position carte2
-            index = this.getMonMemory().retournerIndexParPosition(posCarte2)
-            // On récupère la carte en position carte2
-            carte = this.getMonMemory().getMesCartes()[index]
-            // On place la carte dans notre mémoire
-            this.retenirUneCarte(carte)
+            // On place les cartes dans notre mémoire
+            this.retenirUneCarte(carte1)
+            this.retenirUneCarte(carte2)
         }
         else{
             await this.retirerUneCarte(carte1)
@@ -56,7 +46,7 @@ export class MachineDifficile extends JoueurMachine{
             
         }
         
-        await this.afficherMemoire()
+        //await this.afficherMemoire()
     }
 
     choixUneCarte(){
@@ -113,7 +103,7 @@ export class MachineDifficile extends JoueurMachine{
         // On place la carte dans notre mémoire
         this.retenirUneCarte(carte)
 
-        localStorage.setItem('memoryDifficile', this.getMemoire())
+        //localStorage.setItem('memoryDifficile', this.getMemoire())
 
         return Promise.resolve
     }
